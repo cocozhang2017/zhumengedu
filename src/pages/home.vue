@@ -1,5 +1,17 @@
 <template>
   <div id="home">
+      <div class="topBox">
+          <img src="../assets/img/top.png">
+          <div class="top_middle">
+              <p>
+                  <img src="../assets/img/guanyu.png" alt="">
+              </p>
+
+              <br/>
+              <img class="about1" src="../assets/img/about.png" alt="">
+          </div>
+      </div>
+
     <!--筑梦教育-->
     <div class="zm_edu">
       <div class="zm_edu_left">
@@ -255,26 +267,46 @@
     position: relative;
     width: 100%;
   }
+  .topBox {
+      width: 100%;
+      /*height: 640px;*/
+      position: relative;
+  }
+  .topBox > img {
+      /*height: 640px;*/
+      width: 100%;
+      display: block;
+  }
+  .top_middle {
+      position: absolute;
+      bottom: 13%;
+      left: 50%;
+      transform: translateX(-50%);
+  }
   .zm_edu {
-    position: absolute;
-    top: -360px;
-    left: 20%;
+      width: 60%;
+      margin: 0 auto;
+      position: relative;
+      top: -70px;
+      height: 385px;
+      overflow: hidden;
   }
   .zm_edu_left {
     float: left;
-    width: 50%;
+    width: 66%;
+
   }
   .zm_edu_left img {
     width: 100%;
-    height: 320px;
   }
   .zm_edu_right {
+      width: 33%;
+      box-sizing: border-box;
     float: left;
     background: #3A3E41;
-    width: 23%;
-    height: 320px;
+    height: 100%;
     color: #fff;
-    padding: 0 1%;
+    padding: 0 5%;
   }
 
   .zm_edu_right > h2 {
@@ -291,9 +323,14 @@
     display: inline-block;
     text-align: left;
   }
+  .zm_edu:after{
+      content: '';
+      display: block;
+      clear: both;
+  }
 
   .Course_Introduction {
-    margin-top: 320px;
+    /*margin-top: 320px;*/
     text-align: center;
   }
 
@@ -392,18 +429,5 @@
     padding: 0 30px !important;
   }
 
-  .isFixed {
-    position: fixed;
-    background-color: #AEB7C3;
-    top: -1px;
-    z-index: 999;
-  }
 
-  #searchBar {
-    width: 100%;
-    background-color: #AEB7C3;
-    height: 54px;
-    padding:0;
-    display: flex;
-  }
 </style>

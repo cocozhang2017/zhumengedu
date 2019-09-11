@@ -1,6 +1,6 @@
 <template>
   <div class="navbar">
-    <img src="../assets/img/top.png">
+
     <div :class="searchBarFixed == true ? 'isFixed' :''" class="searchBar" id="searchBar">
       <div class="top">
         <div class="t_left">
@@ -23,13 +23,7 @@
        </span>
       </div>
     </div>
-    <div class="top_middle">
-      <p>
-        <img src="../assets/img/guanyu.png" alt="">
-      </p>
 
-      <img class="about1" src="../assets/img/about.png" alt="">
-    </div>
     <BackTop/>
   </div>
 </template>
@@ -67,17 +61,21 @@
 </script>
 
 <style scoped>
-  .navbar {
-    width: 100%;
-    height: 640px;
-    position: relative;
-  }
-  .navbar > img {
-    height: 640px;
-    width: 100%;
-    display: block;
-  }
 
+
+    #searchBar {
+        width: 100%;
+        background-color: transparent;
+        height: 54px;
+        padding:0;
+        display: flex;
+    }
+    .isFixed {
+        position: fixed;
+        background-color: #AEB7C3;
+        top: -1px;
+        z-index: 999;
+    }
   .top {
     position: absolute;
     top: 10px;
@@ -109,15 +107,6 @@
     font-size: 12px;
     text-align: center;
     margin-top: -2px;
-  }
-
-  .top_middle {
-    position: absolute;
-    top: 420px;
-    left: 44%;
-  }
-  .top_middle>.about1 {
-    margin-left:-36%;
   }
   .on {
     border-bottom:3px solid orangered;
