@@ -3,12 +3,9 @@
         <div class="topBox">
             <img src="../assets/img/news1.jpg">
             <div class="top_middle">
-                <p>
-                    <img src="../assets/img/guanyu.png" alt="">
-                </p>
+                <p class="titleText">新闻动态</p>
 
-                <br/>
-                <img class="about1" src="../assets/img/about.png" alt="">
+                <p class="enText">About building a dream</p>
             </div>
         </div>
     </div>
@@ -23,6 +20,8 @@
 <style scoped>
     .topBox {
         width: 100%;
+        max-height: 1080px;
+        overflow: hidden;
         /*height: 640px;*/
         position: relative;
     }
@@ -32,9 +31,19 @@
         display: block;
     }
     .top_middle {
+        text-align: center;
+        color: white;
+
         position: absolute;
-        top: 420px;
+        bottom: 15%;
         left: 50%;
         transform: translateX(-50%);
+    }
+    .titleText{
+        font-size: 50px;
+    }
+    .enText{
+        font-size: 16px;
+        letter-spacing: 18px;
     }
 </style>
