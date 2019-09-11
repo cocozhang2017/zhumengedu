@@ -113,4 +113,7 @@
     text-align: center;
     cursor: pointer;
   }
+  .guide_item:hover {
+    cursor: pointer;
+  }
 </style>
