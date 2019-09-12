@@ -40,7 +40,7 @@
       goTo (path) {
         this.$router.replace(path)
       },
-      handleSelect (index) {
+     handleSelect (index) {
         this.defaultActiveIndex = index
       }
     }
