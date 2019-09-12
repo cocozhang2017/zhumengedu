@@ -1,6 +1,5 @@
 <template>
   <div class="navbar">
-
     <div :class="searchBarFixed == true ? 'isFixed' :''" class="searchBar" id="searchBar">
       <div class="top">
         <div class="t_left">
@@ -23,58 +22,47 @@
        </span>
       </div>
     </div>
-
-    <BackTop/>
   </div>
 </template>
-
 <script>
-  import BackTop from './BackTop'
   export default {
     name: 'Navbar',
-    components: {BackTop},
     data () {
       return {
         searchBarFixed: true,
-        defaultActiveIndex: "/"
+        defaultActiveIndex: '/'
       }
     },
     mounted () {
       window.addEventListener('scroll', this.handleScroll)
     },
     methods: {
-        goTo (path) {
-          this.$router.replace(path)
-          // this.action=path
-        },
-      handleSelect(index){
-        this.defaultActiveIndex = index;
+      goTo (path) {
+        this.$router.replace(path)
       },
-      handleScroll () {
-        let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
-        let offsetTop = document.querySelector('#searchBar').offsetTop
-        scrollTop > offsetTop ? this.searchBarFixed = true : this.searchBarFixed = false
+     handleSelect (index) {
+        this.defaultActiveIndex = index
       }
     }
   }
 </script>
 
 <style scoped>
+  #searchBar {
+    width: 100%;
+    background-color: transparent;
+    height: 54px;
+    padding: 0;
+    display: flex;
+  }
 
+  .isFixed {
+    position: fixed;
+    background-color: #AEB7C3;
+    top: -1px;
+    z-index: 999;
+  }
 
-    #searchBar {
-        width: 100%;
-        background-color: transparent;
-        height: 54px;
-        padding:0;
-        display: flex;
-    }
-    .isFixed {
-        position: fixed;
-        background-color: #AEB7C3;
-        top: -1px;
-        z-index: 999;
-    }
   .top {
     position: absolute;
     top: 10px;
@@ -86,14 +74,17 @@
     top: 10px;
     left: 51%;
   }
-  .top_right>span {
-    display:inline-block;
+
+  .top_right > span {
+    display: inline-block;
     height: 40px;
     line-height: 40px;
   }
-  .top_right>span+span {
-    margin-left:50px;
+
+  .top_right > span + span {
+    margin-left: 50px;
   }
+
   .t_left > span {
     font-weight: 700;
     font-size: 14px;
@@ -107,11 +98,13 @@
     text-align: center;
     margin-top: -2px;
   }
+
   .on {
-    border-bottom:3px solid orangered;
+    border-bottom: 3px solid orangered;
     text-align: center;
     cursor: pointer;
   }
+
   .guide_item:hover {
     cursor: pointer;
   }

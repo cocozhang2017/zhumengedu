@@ -1,5 +1,6 @@
 <template>
-    <div>333</div>
+    <div>
+    </div>
 </template>
 
 <script>
