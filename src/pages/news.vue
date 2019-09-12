@@ -89,18 +89,15 @@
         width: 100%;
         max-height: 1080px;
         overflow: hidden;
-        /*height: 640px;*/
         position: relative;
     }
     .topBox > img {
-        /*height: 640px;*/
         width: 100%;
         display: block;
     }
     .top_middle {
         text-align: center;
         color: white;
-
         position: absolute;
         bottom: 0%;
         left: 50%;
@@ -120,12 +117,18 @@
         padding: 0 3%;
         box-shadow: 0 0 5px lightgray;
         overflow: hidden;
+        background: white;
+        position: relative;
+        top: -100px;
     }
     .lists{
         display: flex;
         margin-top: 20px;
         padding-bottom: 20px;
         border-bottom: 1px solid #aaaaaa;
+    }
+    .lists:last-child{
+        border-bottom: none;
     }
     .list_left{
         width: 30%;
