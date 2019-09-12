@@ -1,17 +1,16 @@
 <template>
   <div id="home">
-      <div class="topBox">
-          <img src="../assets/img/top.png">
-          <div class="top_middle">
-              <p>
-                  <img src="../assets/img/guanyu.png" alt="">
-              </p>
+    <div class="topBox">
+      <img src="../assets/img/top.png">
+      <div class="top_middle">
+        <p>
+          <img src="../assets/img/guanyu.png" alt="">
+        </p>
 
-              <br/>
-              <img class="about1" src="../assets/img/about.png" alt="">
-          </div>
+        <br/>
+        <img class="about1" src="../assets/img/about.png" alt="">
       </div>
-
+    </div>
     <!--筑梦教育-->
     <div class="zm_edu">
       <div class="zm_edu_left">
@@ -242,20 +241,15 @@
         </div>
       </div>
     </div>
-
   </div>
 </template>
 
 <script>
-
   export default {
     name: 'home',
     data () {
-      return {
-
-
-      }
-    },
+      return {}
+    }
 
   }
 </script>
@@ -267,41 +261,48 @@
     position: relative;
     width: 100%;
   }
+
   .topBox {
-      width: 100%;
-      /*height: 640px;*/
-      position: relative;
+    width: 100%;
+    /*height: 640px;*/
+    position: relative;
   }
+
   .topBox > img {
-      /*height: 640px;*/
-      width: 100%;
-      display: block;
+    /*height: 640px;*/
+    width: 100%;
+    display: block;
   }
+
   .top_middle {
-      position: absolute;
-      bottom: 13%;
-      left: 50%;
-      transform: translateX(-50%);
+    position: absolute;
+    bottom: 13%;
+    left: 50%;
+    transform: translateX(-50%);
   }
+
   .zm_edu {
-      width: 60%;
-      margin: 0 auto;
-      position: relative;
-      top: -70px;
-      height: 385px;
-      overflow: hidden;
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+    top: -70px;
+    height: 385px;
+    overflow: hidden;
   }
+
   .zm_edu_left {
     float: left;
     width: 66%;
 
   }
+
   .zm_edu_left img {
     width: 100%;
   }
+
   .zm_edu_right {
-      width: 33%;
-      box-sizing: border-box;
+    width: 33%;
+    box-sizing: border-box;
     float: left;
     background: #3A3E41;
     height: 100%;
@@ -323,10 +324,11 @@
     display: inline-block;
     text-align: left;
   }
-  .zm_edu:after{
-      content: '';
-      display: block;
-      clear: both;
+
+  .zm_edu:after {
+    content: '';
+    display: block;
+    clear: both;
   }
 
   .Course_Introduction {
@@ -411,6 +413,7 @@
     text-align: left;
     margin-left: 100px;
   }
+
   .el-tabs__nav-wrap::after {
     background: none !important;
   }
