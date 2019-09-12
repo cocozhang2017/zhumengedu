@@ -52,7 +52,6 @@
       },
       handleScroll () {
         let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
-        console.log(scrollTop)
         let offsetTop = document.querySelector('#searchBar').offsetTop
         scrollTop > offsetTop ? this.searchBarFixed = true : this.searchBarFixed = false
       }
