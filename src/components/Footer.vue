@@ -21,10 +21,10 @@
 
 <style scoped>
   .footer {
-    margin-top: 50px;
+    margin-top: 60px;
     background: #333;
     color: #86837E;
-    font-size: 12px;
+    font-size: 14px;
     height: 80px;
     text-align: center;
   }

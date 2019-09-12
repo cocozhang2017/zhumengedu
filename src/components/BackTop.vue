@@ -1,7 +1,7 @@
 ​<template>
   <div id="goTop">
     <div class="goTop" v-show="goTopShow" @click="goTop">
-      <i class="el-icon-caret-top goTopIcon"></i>
+      <i class="el-icon-upload2 goTopIcon"></i>
     </div>
   </div>
 </template>

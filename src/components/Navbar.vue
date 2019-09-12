@@ -65,13 +65,13 @@
 
   .top {
     /*position: absolute;*/
-    margin-top: 10px;
+    margin-top: 30px;
     margin-left: 21%;
   }
 
   .top_right {
     /*position: absolute;*/
-    margin-top: 10px;
+    margin-top: 30px;
     margin-left: 27%;
   }
 
