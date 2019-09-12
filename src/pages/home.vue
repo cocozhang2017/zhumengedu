@@ -214,15 +214,15 @@
           </p>
         </div>
       </div>
-      <div class="CI_content ps_footer">
-        <div class="CI_content_left ps_footer-left">
+      <div class="ps_footer">
+        <div class="ps_footer-left">
           <h3>战略合作三类学校</h3>
           <p>现代音乐学院(表演、舞蹈表演、音乐表演)</p>
           <p>上海音乐学院(表演系)</p>
           <p>北京开放大学影视艺术学院</p>
           <p>北京电影学院现代创意媒体学院(表演系)拿成人教育学历</p>
         </div>
-        <div class="CI_content_right ps_footer-right">
+        <div class="ps_footer-right">
           <h3>战略合作海外学校</h3>
           <p>韩国民族大学</p>
           <p>首尔艺术大学</p>
@@ -280,7 +280,7 @@
     left: 50%;
     transform: translateX(-50%);
   }
-
+  /*筑梦教育*/
   .zm_edu {
     width: 60%;
     margin: 0 auto;
@@ -324,13 +324,13 @@
     display: inline-block;
     text-align: left;
   }
-
-  .zm_edu:after {
+  /*清除浮动*/
+  .zm_edu:after,.CI_content,.ps_footer {
     content: '';
     display: block;
     clear: both;
   }
-
+  /*课程介绍*/
   .Course_Introduction {
     /*margin-top: 320px;*/
     text-align: center;
@@ -344,28 +344,7 @@
   .Course_Introduction > p > span + span {
     margin-left: 5px;
   }
-
-  .CI_content_left {
-    margin-left: 20%;
-  }
-
-  .CI_content_left, .CI_content_middle, .CI_content_right {
-    float: left;
-    width: 20%;
-    color: #3A3A3A;
-  }
-
-  .CI_content_left > h3, .CI_content_middle > h3, .CI_content_right > h3 {
-    background: #3A3E41;
-    color: #fff;
-    height: 57px;
-    line-height: 57px;
-  }
-
-  .CI_content_middle > h3 {
-    background: #797E82;
-  }
-
+  /*校园环境*/
   .Campus_Environment {
     margin-top: 440px;
     text-align: center;
@@ -380,7 +359,27 @@
     width: 100%;
     height: 800px;
   }
+  /*备考学校*/
+  .CI_content_left {
+    margin-left: 20%;
+  }
 
+  .CI_content_left, .CI_content_middle, .CI_content_right {
+    float: left;
+    width: 20%;
+    color: #3A3A3A;
+  }
+
+  .CI_content_left > h3, .CI_content_middle > h3, .CI_content_right > h3,.ps_footer-left>h3,.ps_footer-right>h3{
+    background: #3A3E41;
+    color: #fff;
+    height: 57px;
+    line-height: 57px;
+  }
+
+  .CI_content_middle > h3 {
+    background: #797E82;
+  }
   .preparation_school_3 > p {
     text-align: left;
   }
@@ -397,40 +396,27 @@
   }
 
   .ps_footer {
-    margin-left: 12%;
+    margin-top:30px;
+    margin-left: 30%;
   }
-
   .ps_footer h3 {
     text-align: center;
   }
 
   .ps_footer-left, .ps_footer-right {
+    float:left;
     text-align: left;
-    width: 23%;
+    width: 30%;
+    float: left;
+    color: #3A3A3A;
   }
-
   .ps_footer-right > p {
     text-align: left;
     margin-left: 100px;
   }
-
-  .el-tabs__nav-wrap::after {
-    background: none !important;
+  .ps_footer:after {
+    content: '';
+    display: block;
+    clear: both;
   }
-
-  .el-tabs__active-bar {
-    background: none !important;
-  }
-
-  .el-tabs__item.is-active {
-    background: #AEB7C3 !important;
-    color: #ddd !important;
-    text-align: center !important;
-  }
-
-  .el-tabs__item {
-    padding: 0 30px !important;
-  }
-
-
 </style>

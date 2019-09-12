@@ -64,15 +64,15 @@
   }
 
   .top {
-    position: absolute;
-    top: 10px;
-    left: 21%;
+    /*position: absolute;*/
+    margin-top: 10px;
+    margin-left: 21%;
   }
 
   .top_right {
-    position: absolute;
-    top: 10px;
-    left: 51%;
+    /*position: absolute;*/
+    margin-top: 10px;
+    margin-left: 27%;
   }
 
   .top_right > span {
