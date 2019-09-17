@@ -271,6 +271,7 @@
   .topBox > img {
     /*height: 640px;*/
     width: 100%;
+    margin-top: -22px;
     display: block;
   }
 
@@ -280,6 +281,7 @@
     left: 50%;
     transform: translateX(-50%);
   }
+
   /*筑梦教育*/
   .zm_edu {
     width: 60%;
@@ -324,12 +326,14 @@
     display: inline-block;
     text-align: left;
   }
+
   /*清除浮动*/
-  .zm_edu:after,.CI_content,.ps_footer {
+  .zm_edu:after, .CI_content, .ps_footer {
     content: '';
     display: block;
     clear: both;
   }
+
   /*课程介绍*/
   .Course_Introduction {
     /*margin-top: 320px;*/
@@ -344,6 +348,7 @@
   .Course_Introduction > p > span + span {
     margin-left: 5px;
   }
+
   /*校园环境*/
   .Campus_Environment {
     margin-top: 440px;
@@ -359,6 +364,7 @@
     width: 100%;
     height: 800px;
   }
+
   /*备考学校*/
   .CI_content_left {
     margin-left: 20%;
@@ -370,7 +376,7 @@
     color: #3A3A3A;
   }
 
-  .CI_content_left > h3, .CI_content_middle > h3, .CI_content_right > h3,.ps_footer-left>h3,.ps_footer-right>h3{
+  .CI_content_left > h3, .CI_content_middle > h3, .CI_content_right > h3, .ps_footer-left > h3, .ps_footer-right > h3 {
     background: #3A3E41;
     color: #fff;
     height: 57px;
@@ -380,6 +386,7 @@
   .CI_content_middle > h3 {
     background: #797E82;
   }
+
   .preparation_school_3 > p {
     text-align: left;
   }
@@ -396,24 +403,27 @@
   }
 
   .ps_footer {
-    margin-top:30px;
+    margin-top: 30px;
     margin-left: 30%;
   }
+
   .ps_footer h3 {
     text-align: center;
   }
 
   .ps_footer-left, .ps_footer-right {
-    float:left;
+    float: left;
     text-align: left;
     width: 30%;
     float: left;
     color: #3A3A3A;
   }
+
   .ps_footer-right > p {
     text-align: left;
     margin-left: 100px;
   }
+
   .ps_footer:after {
     content: '';
     display: block;
