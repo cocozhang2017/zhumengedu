@@ -4,6 +4,7 @@ import Home from '@/pages/home'
 import News from '@/pages/news'
 import Parnter from '@/pages/parnter'
 import Contact from '@/pages/contact'
+import LeavingMessage from '@/pages/LeavingMessage'
 Vue.use(Router)
 
 export default new Router({
@@ -29,6 +30,11 @@ export default new Router({
       name: 'Contact',
       component: Contact
     },
+      {
+          path: '/LeavingMessage',
+          name: 'LeavingMessage',
+          component: LeavingMessage
+      },
     {
       path: '/',
       redirect: '/home'
