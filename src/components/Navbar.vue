@@ -52,15 +52,15 @@
 </script>
 
 <style scoped>
-    .navbar {
-        width: 100%;
-        background: #3684ff;
-    }
+    /*.navbar {*/
+        /*width: 100%;*/
+        /*background: #3684ff;*/
+    /*}*/
 
     #searchBar {
         width: 100%;
-        background-color: transparent;
-        height: 54px;
+        /*background-color: transparent;*/
+        /*height: 54px;*/
         padding: 0;
         display: flex;
     }
@@ -74,13 +74,13 @@
 
     .top {
         /*position: absolute;*/
-        margin-top: 30px;
+        margin-top: 20px;
         margin-left: 21%;
     }
 
     .top_right {
         /*position: absolute;*/
-        margin-top: 30px;
+        margin-top: 20px;
         margin-left: 27%;
     }
 
