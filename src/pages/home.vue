@@ -24,6 +24,13 @@
         </span>
       </div>
     </div>
+      <!--视频展示-->
+      <div class="vd">
+          <h3>视频介绍</h3>
+          <video controls>
+              <source src="" type="video/mp4">
+          </video>
+      </div>
     <!--课程介绍-->
     <div class="Course_Introduction">
       <h2>课程介绍</h2>
@@ -288,7 +295,7 @@
     margin: 0 auto;
     position: relative;
     top: -70px;
-    height: 385px;
+    height: 400px;
     overflow: hidden;
   }
 
@@ -332,6 +339,21 @@
     content: '';
     display: block;
     clear: both;
+  }
+  /*视频介绍*/
+  .vd {
+      margin-left:20%;
+      margin-top:-30px;
+      width: 60%;
+      height: 550px;
+      text-align: center;
+  }
+  .vd>h3 {
+      text-align: center;
+  }
+  .vd>video {
+      width: 100%;
+      height: 480px;
   }
 
   /*课程介绍*/
