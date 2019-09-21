@@ -14,7 +14,7 @@
                 <span class="guide_item" :class="{on: '/news'===$route.path}" @click="goTo('/news')">
        新闻动态
        </span>
-                <span class="guide_item" :class="{on: '/parnter'===$route.path}" @click="goTo('/parnter')">
+                <span class="guide_item" :class="{on: '/partner'===$route.path}" @click="goTo('/partner')">
        合作伙伴
        </span>
                 <span class="guide_item" :class="{on: '/contact'===$route.path}" @click="goTo('/contact')">
