@@ -2,42 +2,61 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/pages/home'
 import News from '@/pages/news'
-import Parnter from '@/pages/parnter'
+import partner from '@/pages/partner'
 import Contact from '@/pages/contact'
 import LeavingMessage from '@/pages/LeavingMessage'
+import home_mb from '@/pages_mb/home_mb'
+
+
+
 Vue.use(Router)
 
-export default new Router({
-  mode: 'history',
-  routes: [
-    {
-      path: '/home',
-      name: 'Home',
-      component: Home
-    },
-    {
-      path: '/news',
-      name: 'News',
-      component: News
-    },
-    {
-      path: '/parnter',
-      name: 'Parnter',
-      component: Parnter
-    },
-    {
-      path: '/contact',
-      name: 'Contact',
-      component: Contact
-    },
-      {
-          path: '/LeavingMessage',
-          name: 'LeavingMessage',
-          component: LeavingMessage
-      },
-    {
-      path: '/',
-      redirect: '/home'
-    }
-  ]
+let router = new Router({
+    mode: 'history',
+    base: '/',
+    routes: [
+        {
+            path: '/home',
+            name: 'Home',
+            component: Home
+        },
+        {
+            path: '/news',
+            name: 'News',
+            component: News
+        },
+        {
+            path: '/partner',
+            name: 'partner',
+            component: partner
+        },
+        {
+            path: '/contact',
+            name: 'Contact',
+            component: Contact
+        },
+        {
+            path: '/LeavingMessage',
+            name: 'LeavingMessage',
+            component: LeavingMessage
+        },
+        {
+            path: '/home_mb',
+            name: 'home_mb',
+            component: home_mb
+        },
+    ]
 })
+
+router.beforeEach((to, from, next) => {
+    if(to.path == '/'){
+        if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+            next('/home_mb')
+        }else{
+            next('/home')
+        }
+    }
+    next()
+})
+
+export default router
