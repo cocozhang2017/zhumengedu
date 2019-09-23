@@ -152,12 +152,12 @@ export default {
     }
     .one_cube{
         width: 33.3%;
-        max-height: 400px;
+        max-height: 440px;
         overflow: hidden;
     }
     .two_cube{
         width: 66.7%;
-        max-height: 400px;
+        max-height: 440px;
         overflow: hidden;
     }
     .cube_titlle{
