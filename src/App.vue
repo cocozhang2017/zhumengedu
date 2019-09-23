@@ -1,9 +1,14 @@
 <template>
   <div id="app">
-    <Navbar/>
-    <router-view/>
-    <BackTop/>
-    <Footer/>
+      <template v-if="client=='p'">
+          <Navbar/>
+          <router-view/>
+          <BackTop/>
+          <Footer/>
+      </template>
+      <template v-else>
+          <router-view/>
+      </template>
   </div>
 </template>
 
@@ -12,16 +17,27 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import BackTop from './components/BackTop'
 export default {
-  name: 'App',
-  components: {
-    Navbar,
-    Footer,
-    BackTop
-  }
+    name: 'App',
+    components: {
+        Navbar,
+        Footer,
+        BackTop
+    },
+    data: ()=>({
+        client: '',
+    }),
+    created(){
+        if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+            this.client = 'm'
+        }else{
+            this.client = 'p'
+        }
+    },
 }
 </script>
 
 <style>
+    @import "../static/css/mobile.css";
 #app {
 }
     html,body{
