@@ -1,6 +1,6 @@
 <template>
     <div class="input-con">
-        <span>昵称:</span>
+        <span>手机号码:</span>
         <input type="text" :value="value" @input="updateValue"/>
     </div>
 </template>
