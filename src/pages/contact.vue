@@ -253,7 +253,7 @@
 <!--}-->
 
 <!--</style>-->
-<style>
+<style scoped>
     .topBox {
         width: 100%;
         /*max-height: 1080px;*/
