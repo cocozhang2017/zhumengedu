@@ -1,7 +1,11 @@
 <template>
     <div class="news">
         <div class="topBox">
-            <img src="../assets/mobile/news/news1-assets/news2@2x.png">
+            <img src="../assets/mobile/news/news1.png"
+                 srcset="../assets/mobile/news/news1-assets/news1@1x.png 320w,
+                        ../assets/mobile/news/news1-assets/news1@2x.png 375w,
+                        ../assets/mobile/news/news1-assets/news1@3x.png 414w"
+            >
             <div class="top_middle">
                 <p class="titleText">新闻动态</p>
                 <p class="enText">About building a dream</p>
@@ -55,7 +59,7 @@
                     time: '20190910'
                 },
                 {
-                    img: '/static/news_mb/news5.jpg',
+                    img: '/static/news_mb/news5.png',
                     newsTitle: '创意艺术大学丨全英最顶尖的艺术院校',
                     author: '宿莽',
                     comment: '4',

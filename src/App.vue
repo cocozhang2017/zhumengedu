@@ -9,7 +9,7 @@
       <template v-else>
           <NavBarMb/>
           <router-view/>
-          <Footer/>
+          <FooterMb/>
       </template>
   </div>
 </template>
@@ -18,6 +18,7 @@
 import Navbar from './components/Navbar'
 import NavBarMb from './components/mobile/NavBarMb'
 import Footer from './components/Footer'
+import FooterMb from './components/mobile/FooterMb'
 import BackTop from './components/BackTop'
 
 
@@ -27,7 +28,8 @@ export default {
         Navbar,
         Footer,
         BackTop,
-        NavBarMb
+        NavBarMb,
+        FooterMb
     },
     data: ()=>({
         client: '',

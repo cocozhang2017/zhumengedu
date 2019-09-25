@@ -53,8 +53,8 @@
         width: 100%;
         max-width: 750px;
         margin: 0 auto;
-        /*background-color: #AEB7C3;*/
-        background-color: rgba(255,255,255,.2);
+        background-color: rgba(174,183,195,.6);
+        /*background-color: rgba(255,255,255,.2);*/
         position: fixed;
         top: 0;
         z-index: 999;
