@@ -1,9 +1,14 @@
 <template>
-    <div class="partner">
+    <div class="partner_mb">
         <div class="topBox">
-            <img src="../assets/partner/partner_bg.jpg">
+            <img src="../assets/mobile/partner/parnter1.jpg"
+                 srcset="../assets/mobile/partner/parnter1-assets/parnter@1x.png 320w,
+                        ../assets/mobile/partner/parnter1-assets/parnter@2x.png 375w,
+                        ../assets/mobile/partner/parnter1-assets/parnter@3x.png 414w"
+            >
             <div class="top_middle">
-                <img src="../assets/partner/partner_title.png">
+                <p class="titleText">合作伙伴</p>
+                <p class="enText">About building a dream</p>
             </div>
         </div>
         <div class="content">
@@ -15,7 +20,11 @@
                     <p>初心传媒贯彻执行集团的轻利润运营 思维，誓做一家以服务至上，全身心为客户提供最佳解决方案的新思维传媒公司</p>
                 </div>
                 <div class="two_cube">
-                    <img src="../assets/partner/partner1.jpg">
+                    <img src="../assets/mobile/partner/parnter2.jpg"
+                         srcset="../assets/mobile/partner/parnter2-assets/parnter@1x.png 320w,
+                        ../assets/mobile/partner/parnter2-assets/parnter@2x.png 375w,
+                        ../assets/mobile/partner/parnter2-assets/parnter@3x.png 414w"
+                    >
                 </div>
                 <div class="one_cube">
                     <h3 class="cube_titlle">
@@ -25,6 +34,11 @@
                 </div>
                 <div class="one_cube">
                     <img src="../assets/partner/partner2.jpg">
+                    <!--<img src="../assets/mobile/partner/parnter3.jpg"-->
+                         <!--srcset="../assets/mobile/partner/parnter3-assets/parnter@1x.png 320w,-->
+                        <!--../assets/mobile/partner/parnter3-assets/parnter@2x.png 375w,-->
+                        <!--../assets/mobile/partner/parnter3-assets/parnter@3x.png 414w"-->
+                    <!--&gt;-->
                 </div>
                 <div class="one_cube">
                     <h3 class="cube_titlle">
@@ -33,7 +47,12 @@
                     <p>公司致力于原创舞台剧、影视剧的孵化 影视剧后期配音。贯彻执行集团的轻利润运营思维，誓做一家以服务至上，全身心为客户提供最具性价比解决方案的新思维影业</p>
                 </div>
                 <div class="one_cube">
-                    <img src="../assets/partner/partner3.jpg">
+                    <!--<img src="../assets/partner/partner3.jpg">-->
+                    <img src="../assets/mobile/partner/parnter4.jpg"
+                    srcset="../assets/mobile/partner/parnter4-assets/parnter@1x.png 320w,
+                    ../assets/mobile/partner/parnter4-assets/parnter@2x.png 375w,
+                    ../assets/mobile/partner/parnter4-assets/parnter@3x.png 414w"
+                    >
                 </div>
                 <div class="two_cube">
                     <div class="two_info">
@@ -95,20 +114,21 @@
 </template>
 
 <script>
-export default {
-    name: 'partner',
-    data: () => ({
+    export default {
+        name: 'partner',
+        data: () => ({
 
-    }),
-    methods: {}
-}
+        }),
+        methods: {}
+    }
 </script>
 
 <style scoped>
+    p{
+        margin: 0;
+    }
     .topBox {
         width: 100%;
-        /*max-height: 1080px;*/
-        /*overflow: hidden;*/
         position: relative;
     }
 
@@ -119,29 +139,28 @@ export default {
     }
 
     .top_middle {
+        width: 100%;
         text-align: center;
         color: white;
         position: absolute;
-        bottom: 0%;
+        bottom: 20%;
         left: 50%;
         transform: translateX(-50%);
     }
-
     .titleText {
-        font-size: 40px;
-        margin-bottom: 20px;
+        font-size: 1rem;
+        margin-bottom: 5px;
     }
     .enText {
-        font-size: 16px;
-        letter-spacing: 15px;
+        font-size: .7rem;
+        letter-spacing: .3rem;
     }
-
     .content {
-        width: 62%;
+        width: 100%;
         box-sizing: border-box;
         margin: 0 auto;
-        position: relative;
-        top: -100px;
+        /*position: relative;*/
+        /*top: -2rem;*/
     }
     .partner_info{
         display: flex;
@@ -152,18 +171,18 @@ export default {
     }
     .one_cube{
         width: 33.3%;
-        max-height: 440px;
+        min-height: 180px;
         overflow: hidden;
     }
     .two_cube{
         width: 66.7%;
-        max-height: 440px;
+        min-height: 180px;
         overflow: hidden;
     }
     .cube_titlle{
-        font-size: 25px;
+        font-size: .9rem;
         text-align: center;
-        padding-top: 15%;
+        padding-top: 5%;
         margin-bottom: 15%;
     }
     .cube_titlle span{
@@ -171,12 +190,12 @@ export default {
         border: 1px solid white;
     }
     .one_cube p{
-        padding: 0 15%;
-        font-size: 16px;
+        padding: 0 7%;
+        font-size: .6rem;
         text-align: justify;
     }
     .two_cube p{
-        font-size: 16px;
+        font-size: 1rem;
     }
     .content img{
         width: 100%;
@@ -184,14 +203,14 @@ export default {
     }
     .two_info{
         padding-top: 7%;
-        padding-left: 8%;
+        padding-left: 2%;
     }
     .two_info h3{
-        font-size: 25px;
-        margin-bottom: 5%;
+        font-size: 0.9rem;
+        margin: 5%;
     }
     .two_info p{
-        font-size: 16px;
+        font-size: 0.6rem;
     }
 
     .teacher_text{

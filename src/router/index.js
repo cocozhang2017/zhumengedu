@@ -7,6 +7,7 @@ import Contact from '@/pages/contact'
 import LeavingMessage from '@/pages/LeavingMessage'
 import home_mb from '@/pages_mb/home_mb'
 import news_mb from '@/pages_mb/news_mb'
+import partner_mb from '@/pages_mb/partner_mb'
 Vue.use(Router)
 let router = new Router({
     mode: 'history',
@@ -46,6 +47,11 @@ let router = new Router({
             path: '/news_mb',
             name: 'news_mb',
             component: news_mb
+        },
+        {
+            path: '/partner_mb',
+            name: 'partner_mb',
+            component: partner_mb
         },
     ]
 })

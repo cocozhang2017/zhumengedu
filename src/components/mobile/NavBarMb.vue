@@ -14,7 +14,7 @@
                 <span class="guide_item" :class="{on: '/news_mb'===$route.path}" @click="goTo('/news_mb')">
                     新闻动态
                 </span>
-                <span class="guide_item" :class="{on: '/partner'===$route.path}" @click="goTo('/partner')">
+                <span class="guide_item" :class="{on: '/partner_mb'===$route.path}" @click="goTo('/partner_mb')">
                     合作伙伴
                 </span>
                 <span class="guide_item" :class="{on: '/contact'===$route.path}" @click="goTo('/contact')">
@@ -93,7 +93,7 @@
         margin-left: 2%;
     }
     .on {
-        background: rgba(0,0,0,.1);
+        background: rgba(0,0,0,.2);
         border-bottom: 3px solid orangered;
         text-align: center;
         cursor: pointer;
