@@ -7,21 +7,27 @@
           <Footer/>
       </template>
       <template v-else>
+          <NavBarMb/>
           <router-view/>
+          <Footer/>
       </template>
   </div>
 </template>
 
 <script>
 import Navbar from './components/Navbar'
+import NavBarMb from './components/mobile/NavBarMb'
 import Footer from './components/Footer'
 import BackTop from './components/BackTop'
+
+
 export default {
     name: 'App',
     components: {
         Navbar,
         Footer,
-        BackTop
+        BackTop,
+        NavBarMb
     },
     data: ()=>({
         client: '',

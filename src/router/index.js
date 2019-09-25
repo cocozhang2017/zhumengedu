@@ -6,6 +6,7 @@ import partner from '@/pages/partner'
 import Contact from '@/pages/contact'
 import LeavingMessage from '@/pages/LeavingMessage'
 import home_mb from '@/pages_mb/home_mb'
+import news_mb from '@/pages_mb/news_mb'
 
 
 
@@ -44,6 +45,11 @@ let router = new Router({
             path: '/home_mb',
             name: 'home_mb',
             component: home_mb
+        },
+        {
+            path: '/news_mb',
+            name: 'news_mb',
+            component: news_mb
         },
     ]
 })
