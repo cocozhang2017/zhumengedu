@@ -47,7 +47,8 @@ export default {
 <style>
     @import "../static/css/mobile.css";
 #app {
-}
+    background-color: #F5FFFA;
+     }
     html,body{
         padding: 0;
         margin: 0;
