@@ -56,7 +56,8 @@
 <style scoped>
     .LM {
         background: #F5FFFA;
-        margin-top:80px;
+        padding-top:80px;
+        height: 100%;
     }
     .message {
         display: flex;
