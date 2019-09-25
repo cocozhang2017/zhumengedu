@@ -7,11 +7,7 @@ import Contact from '@/pages/contact'
 import LeavingMessage from '@/pages/LeavingMessage'
 import home_mb from '@/pages_mb/home_mb'
 import news_mb from '@/pages_mb/news_mb'
-
-
-
 Vue.use(Router)
-
 let router = new Router({
     mode: 'history',
     base: '/',
