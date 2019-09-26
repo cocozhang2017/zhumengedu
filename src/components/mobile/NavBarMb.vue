@@ -8,7 +8,7 @@
                 </div>
             </div>
             <div class="top_right">
-                <span class="guide_item" :class="{on: '/home'===$route.path}" @click="goTo('/home')">
+                <span class="guide_item" :class="{on: '/home_mb'===$route.path}" @click="goTo('/home_mb')">
                     首页
                 </span>
                 <span class="guide_item" :class="{on: '/news_mb'===$route.path}" @click="goTo('/news_mb')">
@@ -17,7 +17,7 @@
                 <span class="guide_item" :class="{on: '/partner_mb'===$route.path}" @click="goTo('/partner_mb')">
                     合作伙伴
                 </span>
-                <span class="guide_item" :class="{on: '/contact'===$route.path}" @click="goTo('/contact')">
+                <span class="guide_item" :class="{on: '/contact_mb'===$route.path}" @click="goTo('/contact_mb')">
                     联系我们
                 </span>
             </div>

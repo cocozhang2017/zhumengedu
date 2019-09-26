@@ -1,4 +1,3 @@
-
 <template>
     <div>
         <div class="topBox">
@@ -8,7 +7,11 @@
                         ../assets/mobile/contact/contact1-assets/contact1@3x.png 414w"
             >
             <div class="top_middle">
-                <img src="../assets/img/contact4.png">
+                <img src=" ../assets/mobile/contact/contact5.jpg"
+                srcset="../assets/mobile/contact/contact5-assets/contact5@1x.png 320w,
+                ../assets/mobile/contact/contact5-assets/contact5@2x.png 375w,
+                ../assets/mobile/contact/contact5-assets/contact5@3x.png 414w"
+                >">
             </div>
         </div>
         <!--联系我们很高兴为你服务-->
@@ -17,60 +20,56 @@
                 <img src="../assets/mobile/contact/contact2.jpg"
                      srcset="../assets/mobile/contact/contact2-assets/contact2@1x.png 320w,
                         ../assets/mobile/contact/contact2-assets/contact2@2x.png 375w,
-                        ../assets/mobile/contact/contact2-assets/contact2@3x.png 414w"
-                >
+                        ../assets/mobile/contact/contact2-assets/contact2@3x.png 414w">
             </div>
         </div>
         <!--联系我们 联系地址-->
         <div class="contact">
             <div class="contact-us">
                 <div class="contact-us-left">
-                    <img src="../assets/mobile/contact/contact3.jpg" alt=""
+                    <img src="../assets/mobile/contact/contact3.jpg"
                          srcset="../assets/mobile/contact/contact3-assets/contact3@1x.png 320w,
                         ../assets/mobile/contact/contact3-assets/contact3@2x.png 375w,
-                        ../assets/mobile/contact/contact3-assets/contact3@3x.png 414w"
-                    >
+                        ../assets/mobile/contact/contact3-assets/contact3@3x.png 414w">
                 </div>
                 <div class="contact-us-right">
                     <div class="contact-us-right-top">
-                        <img src="../assets/img/lxwm.png" alt=""
-                        >
+                        <img src="../assets/mobile/contact/lianxiwomen.png" alt="">
                         <span>联系我们</span>
                         <hr>
                     </div>
                     <div class="contact-us-right-footer">
                         <p>
-                            全国业务咨询热线:400-2828-80-028-8737576
+                            <!--全国业务咨询热线:400-2828-80-028-8737576-->
                         </p>
-                        <p>
-                            技术支持:028-857759385-9954753
-                        </p>
-                        <p>
-                            备案咨询电话:028-830571122
-                        </p>
-                        <p>
-                            企业客服QQ:400282888
-                        </p>
-                        <p>
-                            客服邮箱:18822758392@163.com
-                        </p>
-                        <p>
-                            投诉邮箱:tousu@mgtx.com
-                        </p>
+                        <!--<p>-->
+                            <!--技术支持:028-857759385-9954753-->
+                        <!--</p>-->
+                        <!--<p>-->
+                            <!--备案咨询电话:028-830571122-->
+                        <!--</p>-->
+                        <!--<p>-->
+                            <!--企业客服QQ:400282888-->
+                        <!--</p>-->
+                        <!--<p>-->
+                            <!--客服邮箱:18822758392@163.com-->
+                        <!--</p>-->
+                        <!--<p>-->
+                            <!--投诉邮箱:tousu@mgtx.com-->
+                        <!--</p>-->
                     </div>
                 </div>
             </div>
             <div class="contact-address">
                 <div class="contact-address-left">
-                    <img src="../assets/mobile/contact/contact4.jpg" alt=""
+                    <img src="../assets/mobile/contact/contact4.jpg"
                          srcset="../assets/mobile/contact/contact4-assets/contact4@1x.png 320w,
                         ../assets/mobile/contact/contact4-assets/contact4@2x.png 375w,
-                        ../assets/mobile/contact/contact4-assets/contact4@3x.png 414w"
-                    >
+                        ../assets/mobile/contact/contact4-assets/contact4@3x.png 414w">
                 </div>
                 <div class="contact-address-right">
                     <div class="contact-address-right-top">
-                        <img src="../assets/img/zuobiao.png" alt="">
+                        <img src="../assets/mobile/contact/zuobiao.png" alt="">
                         <span>联系地址</span>
                         <hr>
                     </div>
@@ -115,7 +114,7 @@
         text-align: center;
         color: white;
         position: absolute;
-        top:55%;
+        top: 55%;
         bottom: 0%;
         left: 50%;
         transform: translateX(-50%);
@@ -123,24 +122,26 @@
 
     /*筑梦教育*/
     .happy {
-        width: 76%;
+        width: 90%;
         margin: 0 auto;
         overflow: hidden;
         position: relative;
-        top: -160px;
+        top: -40px;
     }
+
     .happy_img {
         width: 100%;
     }
-    .happy_img>img {
+
+    .happy_img > img {
         width: 100%;
         height: 100%;
     }
 
     .contact {
-        width: 76%;
+        width: 90%;
         margin: 20px auto;
-        margin-top: -120px;
+        margin-top: -40px;
         background: #F5FFFA;
     }
 
@@ -154,24 +155,27 @@
     }
 
     .contact-address {
-        margin-top: 20px;
+        margin-top: 0;
     }
 
     .contact-us-right, .contact-address-right {
         text-align: left;
         flex: 1;
-        margin: 50px 0 0 30px;
+        margin: 20px 0 0 30px;
     }
+
     .contact-us-right-top {
         height: 60px;
     }
-    .contact-us-right-top>img,.contact-address-right-top>img {
+
+    .contact-us-right-top > img, .contact-address-right-top > img {
         height: 20px;
-        line-height:20px;
+        line-height: 20px;
     }
-    .contact-us-right-top>span,.contact-address-right-top>span {
-        display:inline-block;
-        line-height:20px;
+
+    .contact-us-right-top > span, .contact-address-right-top > span {
+        display: inline-block;
+        line-height: 20px;
         vertical-align: top;
     }
 </style>

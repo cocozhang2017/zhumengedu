@@ -209,7 +209,7 @@ export default {
         position: absolute;
         left: -20%;
         top: -110px;
-        z-index: -1;
+        z-index: 0;
     }
     .teacher_avatar{
         display: flex;
