@@ -38,9 +38,9 @@
                         <span>联系我们</span>
                         <hr>
                     </div>
-                    <div class="contact-us-right-footer">
+                    <!--<div class="contact-us-right-footer">-->
                         <p>
-                            <!--全国业务咨询热线:400-2828-80-028-8737576-->
+                            咨询热线:400-919-1314-010-53513311
                         </p>
                         <!--<p>-->
                             <!--技术支持:028-857759385-9954753-->
@@ -57,14 +57,14 @@
                         <!--<p>-->
                             <!--投诉邮箱:tousu@mgtx.com-->
                         <!--</p>-->
-                    </div>
+                    <!--</div>-->
                 </div>
             </div>
             <div class="contact-address">
                 <div class="contact-address-left">
                     <img src="../assets/mobile/contact/contact4.jpg"
-                         srcset="../assets/mobile/contact/contact4-assets/contact4@1x.png 320w,
-                        ../assets/mobile/contact/contact4-assets/contact4@2x.png 375w,
+                         srcset="../assets/mobile/contact/contact4-assets/contact4@3x.png 320w,
+                        ../assets/mobile/contact/contact4-assets/contact4@3x.png 375w,
                         ../assets/mobile/contact/contact4-assets/contact4@3x.png 414w">
                 </div>
                 <div class="contact-address-right">
@@ -73,17 +73,16 @@
                         <span>联系地址</span>
                         <hr>
                     </div>
-                    <div class="contact-address-right-footer">
+
                         <p>
-                            公司地址:北京市通州区新华南路39号63幢三层N区069号
+                            公司地址:北京市通州区宋庄镇双埠头村桃花村俱乐部忆园
                         </p>
-                        <p>
-                            邮编:10040
-                        </p>
-                        <p>
-                            网址:http://qiutugroup.com
-                        </p>
-                    </div>
+                        <!--<p>-->
+                            <!--邮编:10040-->
+                        <!--</p>-->
+                        <!--<p>-->
+                            <!--网址:http://qiutugroup.com-->
+                        <!--</p>-->
                 </div>
             </div>
         </div>
@@ -149,7 +148,6 @@
         display: flex;
         flex: 2;
     }
-
     .contact-address-left, .contact-us-left {
         flex: 1;
     }
@@ -161,11 +159,11 @@
     .contact-us-right, .contact-address-right {
         text-align: left;
         flex: 1;
-        margin: 20px 0 0 30px;
+        margin: 10px 0 0 10px;
     }
 
     .contact-us-right-top {
-        height: 60px;
+        height: 30px;
     }
 
     .contact-us-right-top > img, .contact-address-right-top > img {
@@ -177,5 +175,8 @@
         display: inline-block;
         line-height: 20px;
         vertical-align: top;
+    }
+   .contact-address p {
+        margin-top:0;
     }
 </style>

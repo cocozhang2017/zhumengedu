@@ -105,7 +105,7 @@
 
     /*筑梦教育*/
     .happy {
-        width: 76%;
+        width: 80%;
         margin: 0 auto;
         overflow: hidden;
         position: relative;
@@ -122,7 +122,7 @@
     }
 
     .contact {
-        width: 76%;
+        width: 80%;
         margin: 20px auto;
         margin-top: -120px;
         background: #F5FFFA;
@@ -144,11 +144,11 @@
     .contact-us-right, .contact-address-right {
         text-align: left;
         flex: 1;
-        margin: 50px 0 0 30px;
+        margin: 40px 0 0 30px;
     }
 
     .contact-us-right-top {
-        height: 60px;
+        height: 40px;
     }
 
     .contact-us-right-top > img, .contact-address-right-top > img {

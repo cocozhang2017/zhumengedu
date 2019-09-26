@@ -291,7 +291,7 @@
 
   /*筑梦教育*/
   .zm_edu {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
     position: relative;
     top: -70px;
@@ -342,9 +342,9 @@
   }
   /*视频介绍*/
   .vd {
-      margin-left:20%;
+      margin-left:10%;
       margin-top:-30px;
-      width: 60%;
+      width: 80%;
       height: 550px;
       text-align: center;
   }
@@ -358,6 +358,9 @@
 
   /*课程介绍*/
   .Course_Introduction {
+      width: 80%;
+      /*background-color: red;*/
+      margin-left:10%;
     /*margin-top: 320px;*/
     text-align: center;
   }
@@ -376,7 +379,10 @@
     margin-top: 440px;
     text-align: center;
   }
-
+.CI_content {
+    width: 80%;
+    margin-left:10%;
+}
   .CE_content_left {
     text-align: left;
     font-size: 0;
@@ -388,13 +394,13 @@
   }
 
   /*备考学校*/
-  .CI_content_left {
-    margin-left: 20%;
-  }
+  /*.CI_content_left {*/
+    /*margin-left: 10%;*/
+  /*}*/
 
   .CI_content_left, .CI_content_middle, .CI_content_right {
     float: left;
-    width: 20%;
+    width: 33.33%;
     color: #3A3A3A;
   }
 
@@ -425,8 +431,9 @@
   }
 
   .ps_footer {
-    margin-top: 30px;
-    margin-left: 30%;
+      width: 80%;
+     margin-top: 30px;
+     margin-left: 10%;
   }
 
   .ps_footer h3 {
@@ -436,14 +443,16 @@
   .ps_footer-left, .ps_footer-right {
     float: left;
     text-align: left;
-    width: 30%;
+    width: 33%;
     float: left;
     color: #3A3A3A;
   }
-
+  .ps_footer-left {
+      margin-left:17%;
+  }
   .ps_footer-right > p {
     text-align: left;
-    margin-left: 100px;
+    margin-left: 120px;
   }
 
   .ps_footer:after {
