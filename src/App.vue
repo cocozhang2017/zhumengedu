@@ -1,16 +1,11 @@
 <template>
   <div id="app">
-      <template v-if="client=='p'">
-          <Navbar/>
-          <router-view/>
-          <BackTop/>
-          <Footer/>
-      </template>
-      <template v-else>
-          <NavBarMb/>
-          <router-view/>
-          <FooterMb/>
-      </template>
+      <Navbar v-if="client=='p'" />
+      <NavBarMb v-else />
+      <router-view/>
+      <BackTop v-if="client=='p'" />
+      <Footer v-if="client=='p'" />
+      <FooterMb v-else />
   </div>
 </template>
 

@@ -70,7 +70,19 @@ router.beforeEach((to, from, next) => {
             next('/home')
         }
     }
-    next()
+    if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+        if(!to.path.endsWith('mb')){
+            let tar = to.path + '_mb';
+            next(tar)
+        }
+        next()
+    }else{
+        if(to.path.endsWith('mb')){
+            let tar = to.path.substring(0,-3);
+            next(tar)
+        }
+        next()
+    }
 })
 
 export default router

@@ -33,12 +33,12 @@
                     <p>公司致力于影视公司的角色分配、 练习生选拔、艺人经纪等业务。贯彻执行集团轻利润运营思维， 誓做一家以服务至上，全身心为艺人、影视公司提供最佳解决方案的新思维艺人经纪公司</p>
                 </div>
                 <div class="one_cube">
-                    <img src="../assets/partner/partner2.jpg">
-                    <!--<img src="../assets/mobile/partner/parnter3.jpg"-->
-                         <!--srcset="../assets/mobile/partner/parnter3-assets/parnter@1x.png 320w,-->
-                        <!--../assets/mobile/partner/parnter3-assets/parnter@2x.png 375w,-->
-                        <!--../assets/mobile/partner/parnter3-assets/parnter@3x.png 414w"-->
-                    <!--&gt;-->
+                    <!--<img src="../assets/partner/partner2.jpg">-->
+                    <img src="../assets/mobile/partner/parnter3.jpg"
+                         srcset="../assets/mobile/partner/parnter3-assets/parnter@1x.png 320w,
+                        ../assets/mobile/partner/parnter3-assets/parnter@2x.png 375w,
+                        ../assets/mobile/partner/parnter3-assets/parnter@3x.png 414w"
+                    >
                 </div>
                 <div class="one_cube">
                     <h3 class="cube_titlle">
@@ -83,29 +83,29 @@
                 <div class="school_cube">
                     <p class="school_name">中央戏剧学院</p>
                     <div class="teacher_avatar">
-                        <div><img src="../assets/partner/teacher1.png"></div>
-                        <div><img src="../assets/partner/teacher2.png"></div>
-                        <div><img src="../assets/partner/teacher3.png"></div>
-                        <div><img src="../assets/partner/teacher1.png"></div>
-                        <div><img src="../assets/partner/teacher2.png"></div>
-                        <div><img src="../assets/partner/teacher3.png"></div>
+                        <div><img src="../assets/mobile/partner/parnter6.jpg"></div>
+                        <div><img src="../assets/mobile/partner/parnter7.jpg"></div>
+                        <div><img src="../assets/mobile/partner/parnter8.jpg"></div>
+                        <div><img src="../assets/mobile/partner/parnter6.jpg"></div>
+                        <div><img src="../assets/mobile/partner/parnter7.jpg"></div>
+                        <div><img src="../assets/mobile/partner/parnter8.jpg"></div>
                     </div>
                 </div>
                 <div class="school_cube">
                     <p class="school_name">北京电影学院</p>
                     <div class="teacher_avatar">
-                        <div><img src="../assets/partner/teacher1.png"></div>
-                        <div><img src="../assets/partner/teacher2.png"></div>
-                        <div><img src="../assets/partner/teacher3.png"></div>
-                        <div><img src="../assets/partner/teacher1.png"></div>
-                        <div><img src="../assets/partner/teacher2.png"></div>
+                        <div><img src="../assets/mobile/partner/parnter6.jpg"></div>
+                        <div><img src="../assets/mobile/partner/parnter7.jpg"></div>
+                        <div><img src="../assets/mobile/partner/parnter8.jpg"></div>
+                        <div><img src="../assets/mobile/partner/parnter6.jpg"></div>
+                        <div><img src="../assets/mobile/partner/parnter7.jpg"></div>
                     </div>
                 </div>
                 <div class="school_cube">
                     <p class="school_name">其他院校</p>
                     <div class="teacher_avatar">
-                        <div><img src="../assets/partner/teacher1.png"></div>
-                        <div><img src="../assets/partner/teacher2.png"></div>
+                        <div><img src="../assets/mobile/partner/parnter6.jpg"></div>
+                        <div><img src="../assets/mobile/partner/parnter7.jpg"></div>
                     </div>
                 </div>
             </div>
@@ -148,19 +148,19 @@
         transform: translateX(-50%);
     }
     .titleText {
-        font-size: 1rem;
+        font-size: 1.1rem;
         margin-bottom: 5px;
     }
     .enText {
-        font-size: .7rem;
+        font-size: .75rem;
         letter-spacing: .3rem;
     }
     .content {
-        width: 100%;
+        width: 92%;
         box-sizing: border-box;
         margin: 0 auto;
-        /*position: relative;*/
-        /*top: -2rem;*/
+        position: relative;
+        top: -2rem;
     }
     .partner_info{
         display: flex;
@@ -180,10 +180,10 @@
         overflow: hidden;
     }
     .cube_titlle{
-        font-size: .9rem;
+        font-size: .8rem;
         text-align: center;
         padding-top: 5%;
-        margin-bottom: 15%;
+        margin: 10% 0;
     }
     .cube_titlle span{
         padding: 2% 6%;
@@ -191,44 +191,49 @@
     }
     .one_cube p{
         padding: 0 7%;
-        font-size: .6rem;
+        font-size: .5rem;
         text-align: justify;
     }
     .two_cube p{
-        font-size: 1rem;
+        font-size: .8rem;
     }
     .content img{
         width: 100%;
         height: 100%;
     }
     .two_info{
-        padding-top: 7%;
+        /*padding-top: 7%;*/
         padding-left: 2%;
     }
     .two_info h3{
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         margin: 5%;
     }
     .two_info p{
-        font-size: 0.6rem;
+        font-size: 0.5rem;
     }
-
     .teacher_text{
         text-align: center;
-        margin-top: 60px;
+        margin-top: 40px;
         margin-bottom: 50px;
+    }
+    .teacher_text .titleText{
+        font-size: 1.5rem;
+    }
+    .teacher_text .enText{
+        font-size: .9rem;
     }
     .school_cube{
         position: relative;
-        margin-bottom: 150px;
+        margin-bottom: 5rem;
     }
     .school_name{
-        font-size: 60px;
-        color: #e4e4e4;
+        font-size: 2rem;
+        color: lightgray;
         position: absolute;
-        left: -20%;
-        top: -110px;
-        z-index: -1;
+        left: -5%;
+        top: -1.5rem;
+        z-index: 0;
     }
     .teacher_avatar{
         display: flex;
@@ -236,7 +241,7 @@
     }
     .teacher_avatar div{
         width: 33.3%;
-        max-height: 400px;
+        max-height: 160px;
         overflow: hidden;
     }
     .teacher_avatar img{
