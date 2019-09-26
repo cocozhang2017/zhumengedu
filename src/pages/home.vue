@@ -353,16 +353,15 @@
   }
   .vd>video {
       width: 100%;
-      height: 480px;
+      height: 500px;
   }
 
   /*课程介绍*/
   .Course_Introduction {
       width: 80%;
-      /*background-color: red;*/
-      margin-left:10%;
+      margin:0 10%;
     /*margin-top: 320px;*/
-    text-align: center;
+    /*text-align: center;*/
   }
 
   .Course_Introduction > p {
