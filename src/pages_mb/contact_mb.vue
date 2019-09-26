@@ -1,7 +1,12 @@
+
 <template>
     <div>
         <div class="topBox">
-            <img src="../assets/img/contact0.png">
+            <img src="../assets/mobile/contact/contact1.jpg"
+                 srcset="../assets/mobile/contact/contact1-assets/contact1@1x.png 320w,
+                        ../assets/mobile/contact/contact1-assets/contact1@2x.png 375w,
+                        ../assets/mobile/contact/contact1-assets/contact1@3x.png 414w"
+            >
             <div class="top_middle">
                 <img src="../assets/img/contact4.png">
             </div>
@@ -9,18 +14,27 @@
         <!--联系我们很高兴为你服务-->
         <div class="happy">
             <div class="happy_img">
-                <img src="../assets/img/contact1.jpg" alt="">
+                <img src="../assets/mobile/contact/contact2.jpg"
+                     srcset="../assets/mobile/contact/contact2-assets/contact2@1x.png 320w,
+                        ../assets/mobile/contact/contact2-assets/contact2@2x.png 375w,
+                        ../assets/mobile/contact/contact2-assets/contact2@3x.png 414w"
+                >
             </div>
         </div>
         <!--联系我们 联系地址-->
         <div class="contact">
             <div class="contact-us">
                 <div class="contact-us-left">
-                    <img src="../assets/img/contact2.jpg" alt="">
+                    <img src="../assets/mobile/contact/contact3.jpg" alt=""
+                         srcset="../assets/mobile/contact/contact3-assets/contact3@1x.png 320w,
+                        ../assets/mobile/contact/contact3-assets/contact3@2x.png 375w,
+                        ../assets/mobile/contact/contact3-assets/contact3@3x.png 414w"
+                    >
                 </div>
                 <div class="contact-us-right">
                     <div class="contact-us-right-top">
-                        <img src="../assets/img/lxwm.png" alt="">
+                        <img src="../assets/img/lxwm.png" alt=""
+                        >
                         <span>联系我们</span>
                         <hr>
                     </div>
@@ -48,7 +62,11 @@
             </div>
             <div class="contact-address">
                 <div class="contact-address-left">
-                    <img src="../assets/img/contact3.jpg" alt="">
+                    <img src="../assets/mobile/contact/contact4.jpg" alt=""
+                         srcset="../assets/mobile/contact/contact4-assets/contact4@1x.png 320w,
+                        ../assets/mobile/contact/contact4-assets/contact4@2x.png 375w,
+                        ../assets/mobile/contact/contact4-assets/contact4@3x.png 414w"
+                    >
                 </div>
                 <div class="contact-address-right">
                     <div class="contact-address-right-top">
