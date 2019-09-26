@@ -63,26 +63,28 @@ let router = new Router({
 })
 
 router.beforeEach((to, from, next) => {
-    if(to.path == '/'){
+    if(to.path == '/' || to.path == ''){
         if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
             next('/home_mb')
         }else{
             next('/home')
         }
-    }
-    if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
-        if(!to.path.endsWith('mb')){
-            let tar = to.path + '_mb';
-            next(tar)
-        }
-        next()
     }else{
-        if(to.path.endsWith('mb')){
-            let tar = to.path.substring(0,-3);
-            next(tar)
+        if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+            if(!to.path.endsWith('mb')){
+                let tar = to.path + '_mb';
+                next(tar)
+            }
+            next()
+        }else{
+            if(to.path.endsWith('mb')){
+                let tar = to.path.substring(0,-3);
+                next(tar)
+            }
+            next()
         }
-        next()
     }
+
 })
 
 export default router

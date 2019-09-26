@@ -72,7 +72,12 @@
                     </div>
                 </div>
                 <div class="one_cube">
-                    <img src="../assets/partner/partner4.jpg">
+                    <!--<img src="../assets/partner/partner4.jpg">-->
+                    <img src="../assets/mobile/partner/parnter5.jpg"
+                         srcset="../assets/mobile/partner/parnter5-assets/parnter5@1x.png 320w,
+                    ../assets/mobile/partner/parnter5-assets/parnter5@2x.png 375w,
+                    ../assets/mobile/partner/parnter5-assets/parnter5@3x.png 414w"
+                    >
                 </div>
             </div>
             <div class="teacher_info">
@@ -171,12 +176,10 @@
     }
     .one_cube{
         width: 33.3%;
-        min-height: 180px;
         overflow: hidden;
     }
     .two_cube{
         width: 66.7%;
-        min-height: 180px;
         overflow: hidden;
     }
     .cube_titlle{
@@ -202,7 +205,7 @@
         height: 100%;
     }
     .two_info{
-        /*padding-top: 7%;*/
+        padding-top: 3%;
         padding-left: 2%;
     }
     .two_info h3{
@@ -241,7 +244,7 @@
     }
     .teacher_avatar div{
         width: 33.3%;
-        max-height: 160px;
+        /*max-height: 160px;*/
         overflow: hidden;
     }
     .teacher_avatar img{
