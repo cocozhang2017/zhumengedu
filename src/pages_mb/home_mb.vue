@@ -81,27 +81,32 @@
                 <span>o</span>
                 <span>n</span></p>
             <div class="CI_content">
-                <div class="CI_content_left">
-                    <h3>周末班</h3>
-                    <p>向地方展示我们的师资</p>
-                    <p>全年周末班</p>
-                    <p>地方周末班</p>
-                </div>
-                <div class="CI_content_middle">
-                    <h3>暑假班</h3>
-                    <p>资深艺人授课圆您一个艺人梦</p>
-                    <p>地方暑期班</p>
-                    <p>基础、提高、优化</p>
-                </div>
-                <div class="CI_content_right">
-                    <h3>冲刺班</h3>
-                    <p>应届考官押题圆您一个名校梦</p>
-                    <p>《考试真题及技巧》</p>
-                    <p>《声乐视听视唱》乐曲，音乐感受视唱练耳</p>
-                    <p>《台词吐字归音》诗歌寓意，综合练习</p>
-                    <p>《形体肢体矫正》形体模仿，肢体矫正</p>
-                    <p>《即兴表演练习》观察人物练习，命题小品，规定情境训练</p>
-                </div>
+                <img src="../assets/mobile/home/home11.jpg"
+                     srcset="../assets/mobile/home/home11-assets/home11@1x.png 320w,
+                        ../assets/mobile/home/home11-assets/home11@2x.png 375w,
+                        ../assets/mobile/home/home11-assets/home11@3x.png 414w"
+                >
+                <!--<div class="CI_content_left">-->
+                    <!--<h3>周末班</h3>-->
+                    <!--<p>向地方展示我们的师资</p>-->
+                    <!--<p>全年周末班</p>-->
+                    <!--<p>地方周末班</p>-->
+                <!--</div>-->
+                <!--<div class="CI_content_middle">-->
+                    <!--<h3>暑假班</h3>-->
+                    <!--<p>资深艺人授课圆您一个艺人梦</p>-->
+                    <!--<p>地方暑期班</p>-->
+                    <!--<p>基础、提高、优化</p>-->
+                <!--</div>-->
+                <!--<div class="CI_content_right">-->
+                    <!--<h3>冲刺班</h3>-->
+                    <!--<p>应届考官押题圆您一个名校梦</p>-->
+                    <!--<p>《考试真题及技巧》</p>-->
+                    <!--<p>《声乐视听视唱》乐曲，音乐感受视唱练耳</p>-->
+                    <!--<p>《台词吐字归音》诗歌寓意，综合练习</p>-->
+                    <!--<p>《形体肢体矫正》形体模仿，肢体矫正</p>-->
+                    <!--<p>《即兴表演练习》观察人物练习，命题小品，规定情境训练</p>-->
+                <!--</div>-->
             </div>
         </div>
         <!--校园环境-->
@@ -439,7 +444,7 @@
 
     /*校园环境*/
     .Campus_Environment {
-        margin-top: 440px;
+        margin-top: 40px;
         text-align: center;
     }
     .CI_content {
