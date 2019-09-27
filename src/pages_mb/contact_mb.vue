@@ -11,7 +11,7 @@
                 srcset="../assets/mobile/contact/contact5-assets/contact5@1x.png 320w,
                 ../assets/mobile/contact/contact5-assets/contact5@2x.png 375w,
                 ../assets/mobile/contact/contact5-assets/contact5@3x.png 414w"
-                >">
+                >
             </div>
         </div>
         <!--联系我们很高兴为你服务-->
