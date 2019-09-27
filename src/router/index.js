@@ -11,7 +11,7 @@ import partner_mb from '@/pages_mb/partner_mb'
 import contact_mb from '@/pages_mb/contact_mb'
 Vue.use(Router)
 let router = new Router({
-    mode: 'history',
+    mode: 'hash',
     base: '/',
     routes: [
         {
