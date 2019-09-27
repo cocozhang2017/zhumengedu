@@ -1,12 +1,12 @@
 <template>
-    <div id="home">
-        <div class="topBox">
+    <div id="mhome">
+        <div class="mtopBox">
             <img src="../assets/mobile/home/home1.jpg"
                  srcset="../assets/mobile/home/home1-assets/home1@1x.png 320w,
                         ../assets/mobile/home/home1-assets/home1@2x.png 375w,
                         ../assets/mobile/home/home1-assets/home1@3x.png 414w"
             >
-            <div class="top_middle">
+            <div class="mtop_middle">
                 <p>
                     <img src="../assets/mobile/home/home7.jpg"
                          srcset="../assets/mobile/home/home7-assets/home7@1x.png 320w,
@@ -25,7 +25,7 @@
             </div>
         </div>
         <!--筑梦教育-->
-        <div class="zm_edu">
+        <div class="mzm_edu">
             <!--<div class="zm_edu_left">-->
                 <!--<img src="../assets/mobile/home/home2.jpg"-->
                      <!--srcset="../assets/mobile/home/home2-assets/home@1x.png 320w,-->
@@ -33,7 +33,7 @@
                         <!--../assets/mobile/home/home2-assets/home@3x.png 414w"-->
                 <!--&gt;-->
             <!--</div>-->
-            <div class="zm_edu_right">
+            <div class="mzm_edu_right">
                 <img src="../assets/mobile/home/home3.jpg"
                      srcset="../assets/mobile/home/home3-assets/home3@1x.png 320w,
                         ../assets/mobile/home/home3-assets/home3@2x.png 375w,
@@ -51,14 +51,14 @@
             </div>
         </div>
         <!--视频展示-->
-        <div class="vd">
+        <div class="mvd">
             <h3>视频介绍</h3>
             <video controls>
                 <source src="" type="video/mp4">
             </video>
         </div>
         <!--课程介绍-->
-        <div class="Course_Introduction">
+        <div class="mCourse_Introduction">
             <h2>课程介绍</h2>
             <p>
                 <span>C</span>
@@ -80,7 +80,7 @@
                 <span>i</span>
                 <span>o</span>
                 <span>n</span></p>
-            <div class="CI_content">
+            <div class="mCI_content">
                 <img src="../assets/mobile/home/home11.jpg"
                      srcset="../assets/mobile/home/home11-assets/home11@1x.png 320w,
                         ../assets/mobile/home/home11-assets/home11@2x.png 375w,
@@ -110,7 +110,7 @@
             </div>
         </div>
         <!--校园环境-->
-        <div class="Campus_Environment">
+        <div class="mCampus_Environment">
             <h2>校园环境</h2>
             <p>
                 <span>C</span>
@@ -132,8 +132,8 @@
                 <span>n</span>
                 <span>t</span>
             </p>
-            <div class="CE_content">
-                <div class="CE_content_left">
+            <div class="mCE_content">
+                <div class="mCE_content_left">
                     <img src="../assets/mobile/home/home4.jpg"
                          srcset="../assets/mobile/home/home4-assets/home4@1x.png 320w,
                         ../assets/mobile/home/home4-assets/home4@2x.png 375w,
@@ -148,7 +148,7 @@
             </div>
         </div>
         <!--备考学校-->
-        <div class="preparation_school">
+        <div class="mpreparation_school">
             <h2>备考学校</h2>
             <p>
                 <span>P</span>
@@ -332,27 +332,27 @@
 </script>
 
 <style>
-    #home {
+    #mhome {
         text-align: center;
         color: #2c3e50;
         position: relative;
         width: 100%;
     }
 
-    .topBox {
+    .mtopBox {
         width: 100%;
         /*height: 640px;*/
         position: relative;
     }
 
-    .topBox > img {
+    .mtopBox > img {
         /*height: 640px;*/
         width: 100%;
         margin-top: -22px;
         display: block;
     }
 
-    .top_middle {
+    .mtop_middle {
         position: absolute;
         bottom: 12%;
         left: 50%;
@@ -360,7 +360,7 @@
     }
 
     /*筑梦教育*/
-    .zm_edu {
+    .mzm_edu {
         width: 80%;
         margin: 0 auto;
         position: relative;
@@ -379,7 +379,7 @@
         /*width: 100%;*/
     /*}*/
 
-    .zm_edu_right {
+    .mzm_edu_right {
         width: 100%;
         box-sizing: border-box;
         float: left;
@@ -389,7 +389,7 @@
         padding: 0 5%;
     }
 
-    .zm_edu_right > h6 {
+    .mzm_edu_right > h6 {
         /*border: 1px solid #fff;*/
         /*margin: 0 20px;*/
         height: 16px;
@@ -398,65 +398,65 @@
         text-align: center;
     }
 
-    .zm_edu_right > span {
+    .mzm_edu_right > span {
         display: inline-block;
         text-align: left;
     }
 
     /*清除浮动*/
-    .zm_edu:after, .CI_content, .ps_footer {
+    .mzm_edu:after, .mCI_content {
         content: '';
         display: block;
         clear: both;
     }
     /*视频介绍*/
-    .vd {
+    .mvd {
         margin-left:10%;
         margin-top:-30px;
         width: 80%;
         height: 200px;
         text-align: center;
     }
-    .vd>h3 {
+    .mvd>h3 {
         text-align: center;
     }
-    .vd>video {
+    .mvd>video {
         width: 100%;
         height: 180px;
     }
 
     /*课程介绍*/
-    .Course_Introduction {
+    .mCourse_Introduction {
         width: 100%;
         /*background-color: red;*/
         margin-top: 50px;
         text-align: center;
     }
 
-    .Course_Introduction > p {
+    .mCourse_Introduction > p {
         font-size: 14px;
         color: #585B5E;
     }
 
-    .Course_Introduction > p > span + span {
+    .mCourse_Introduction > p > span + span {
         margin-left: 5px;
     }
 
     /*校园环境*/
-    .Campus_Environment {
+    .mCampus_Environment {
         margin-top: 40px;
         text-align: center;
     }
-    .CI_content {
+    .mCI_content {
         width: 100%;
         /*margin-left:10%;*/
     }
-    .CE_content_left {
+    .mCE_content_left {
         text-align: left;
         font-size: 0;
     }
 
-    .CE_content_left > img.left {
+    .mCE_content_left > img.left {
         width: 100%;
         height: 800px;
     }
@@ -466,73 +466,73 @@
     /*margin-left: 10%;*/
     /*}*/
 
-    .CI_content_left, .CI_content_middle, .CI_content_right {
-        float: left;
-        width: 33.33%;
-        color: #3A3A3A;
-    }
+    /*.mCI_content_left, .mCI_content_middle, .mCI_content_right {*/
+        /*float: left;*/
+        /*width: 33.33%;*/
+        /*color: #3A3A3A;*/
+    /*}*/
 
-    .CI_content_left > h3, .CI_content_middle > h3, .CI_content_right > h3, .ps_footer-left > h3, .ps_footer-right > h3 {
+    .mCI_content_left > h3, .mCI_content_middle > h3, .mCI_content_right > h3, .mps_footer-left > h3, .mps_footer-right > h3 {
         background: #3A3E41;
         color: #fff;
         height: 57px;
         line-height: 57px;
     }
-    .CI_content_left > p, .CI_content_middle > p, .CI_content_right > p {
+    .mCI_content_left > p, .mCI_content_middle > p, .mCI_content_right > p {
         font-size: 10px;
         /*!*-webkit-transform-origin-x: 0;*!*/
         /*-webkit-transform: scale(0.50);*/
     }
-    .preparation_school{
+    .mpreparation_school{
       margin-top:30px;
     }
-    .CI_content_middle > h3 {
+    .mCI_content_middle > h3 {
         background: #797E82;
     }
 
-    .preparation_school_3 > p {
+    .mpreparation_school_3 > p {
         text-align: left;
     }
 
-    .preparation_school_3 > p > span {
+    .mpreparation_school_3 > p > span {
         width: 37%;
         display: inline-block;
     }
 
-    .preparation_school_3 > p > span + span {
+    .mpreparation_school_3 > p > span + span {
         margin-left: 5%;
         width: 56%;
         display: inline-block;
     }
 
-    .ps_footer {
-        width: 80%;
-        margin-top: 30px;
-        margin-left: 10%;
-    }
+    /*.mps_footer {*/
+        /*width: 80%;*/
+        /*margin-top: 30px;*/
+        /*margin-left: 10%;*/
+    /*}*/
 
-    .ps_footer h3 {
+    .mps_footer h3 {
         text-align: center;
     }
 
-    .ps_footer-left, .ps_footer-right {
-        float: left;
-        text-align: left;
-        width: 33%;
-        float: left;
-        color: #3A3A3A;
-    }
-    .ps_footer-left {
-        margin-left:17%;
-    }
-    .ps_footer-right > p {
+    /*.mps_footer-left, .mps_footer-right {*/
+        /*float: left;*/
+        /*text-align: left;*/
+        /*width: 33%;*/
+        /*float: left;*/
+        /*color: #3A3A3A;*/
+    /*}*/
+    /*.mps_footer-left {*/
+        /*margin-left:17%;*/
+    /*}*/
+    .mps_footer-right > p {
         text-align: left;
         margin-left: 120px;
     }
 
-    .ps_footer:after {
-        content: '';
-        display: block;
-        clear: both;
-    }
+    /*.mps_footer:after {*/
+        /*content: '';*/
+        /*display: block;*/
+        /*clear: both;*/
+    /*}*/
 </style>
