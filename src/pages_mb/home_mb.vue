@@ -383,10 +383,10 @@
         width: 100%;
         box-sizing: border-box;
         float: left;
-        background: #3A3E41;
+        /*background: #3A3E41;*/
         height: 33%;
         color: #fff;
-        padding: 0 5%;
+        /*padding: 0 5%;*/
     }
 
     .mzm_edu_right > h6 {
@@ -397,7 +397,9 @@
         margin-top: 5px;
         text-align: center;
     }
-
+    .mzm_edu_right>img {
+        width: 100%;
+    }
     .mzm_edu_right > span {
         display: inline-block;
         text-align: left;
