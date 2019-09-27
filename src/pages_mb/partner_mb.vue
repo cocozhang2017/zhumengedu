@@ -56,7 +56,7 @@
                 </div>
                 <div class="two_cube">
                     <div class="two_info">
-                        <h3>联合创始人:宿莽</h3>
+                        <h3 style="margin: 3% 0">联合创始人:宿莽</h3>
                         <p>求途文化产业集团创始人 求途筑梦教育联合创始人 求途创造艺人联合创始人</p>
                         <p>求途至美影业联合创始人 求途初心传媒联合创始人</p>
                         <p>敦复教育创始人</p>
@@ -95,6 +95,14 @@
                         <div><img src="../assets/mobile/partner/parnter7.jpg"></div>
                         <div><img src="../assets/mobile/partner/parnter8.jpg"></div>
                     </div>
+                    <div class="teacher_avatar avatar_top">
+                        <div><img src="../assets/mobile/partner/parnter6.jpg"></div>
+                        <div><img src="../assets/mobile/partner/parnter7.jpg"></div>
+                        <div><img src="../assets/mobile/partner/parnter8.jpg"></div>
+                        <div><img src="../assets/mobile/partner/parnter6.jpg"></div>
+                        <div><img src="../assets/mobile/partner/parnter7.jpg"></div>
+                        <div><img src="../assets/mobile/partner/parnter8.jpg"></div>
+                    </div>
                 </div>
                 <div class="school_cube">
                     <p class="school_name">北京电影学院</p>
@@ -105,10 +113,21 @@
                         <div><img src="../assets/mobile/partner/parnter6.jpg"></div>
                         <div><img src="../assets/mobile/partner/parnter7.jpg"></div>
                     </div>
+                    <div class="teacher_avatar avatar_top">
+                        <div><img src="../assets/mobile/partner/parnter6.jpg"></div>
+                        <div><img src="../assets/mobile/partner/parnter7.jpg"></div>
+                        <div><img src="../assets/mobile/partner/parnter8.jpg"></div>
+                        <div><img src="../assets/mobile/partner/parnter6.jpg"></div>
+                        <div><img src="../assets/mobile/partner/parnter7.jpg"></div>
+                    </div>
                 </div>
                 <div class="school_cube">
                     <p class="school_name">其他院校</p>
                     <div class="teacher_avatar">
+                        <div><img src="../assets/mobile/partner/parnter6.jpg"></div>
+                        <div><img src="../assets/mobile/partner/parnter7.jpg"></div>
+                    </div>
+                    <div class="teacher_avatar avatar_top">
                         <div><img src="../assets/mobile/partner/parnter6.jpg"></div>
                         <div><img src="../assets/mobile/partner/parnter7.jpg"></div>
                     </div>
@@ -210,7 +229,7 @@
     }
     .two_info h3{
         font-size: 0.8rem;
-        margin: 5%;
+        margin: 5% 0;
     }
     .two_info p{
         font-size: 0.5rem;
@@ -235,20 +254,26 @@
         color: lightgray;
         position: absolute;
         left: -5%;
-        top: -1.5rem;
+        top: -1.6rem;
         z-index: 0;
     }
     .teacher_avatar{
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
     }
     .teacher_avatar div{
         width: 33.3%;
-        /*max-height: 160px;*/
         overflow: hidden;
     }
     .teacher_avatar img{
         width: 100%;
         height: 100%;
+    }
+    .avatar_top{
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 2;
     }
 </style>

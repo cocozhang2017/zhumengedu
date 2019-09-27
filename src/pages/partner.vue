@@ -71,6 +71,14 @@
                         <div><img src="../assets/partner/teacher2.png"></div>
                         <div><img src="../assets/partner/teacher3.png"></div>
                     </div>
+                    <div class="teacher_avatar avatar_top">
+                        <div><img src="../assets/partner/teacher1.png"></div>
+                        <div><img src="../assets/partner/teacher2.png"></div>
+                        <div><img src="../assets/partner/teacher3.png"></div>
+                        <div><img src="../assets/partner/teacher1.png"></div>
+                        <div><img src="../assets/partner/teacher2.png"></div>
+                        <div><img src="../assets/partner/teacher3.png"></div>
+                    </div>
                 </div>
                 <div class="school_cube">
                     <p class="school_name">北京电影学院</p>
@@ -81,10 +89,21 @@
                         <div><img src="../assets/partner/teacher1.png"></div>
                         <div><img src="../assets/partner/teacher2.png"></div>
                     </div>
+                    <div class="teacher_avatar avatar_top">
+                        <div><img src="../assets/partner/teacher1.png"></div>
+                        <div><img src="../assets/partner/teacher2.png"></div>
+                        <div><img src="../assets/partner/teacher3.png"></div>
+                        <div><img src="../assets/partner/teacher1.png"></div>
+                        <div><img src="../assets/partner/teacher2.png"></div>
+                    </div>
                 </div>
                 <div class="school_cube">
                     <p class="school_name">其他院校</p>
                     <div class="teacher_avatar">
+                        <div><img src="../assets/partner/teacher1.png"></div>
+                        <div><img src="../assets/partner/teacher2.png"></div>
+                    </div>
+                    <div class="teacher_avatar avatar_top">
                         <div><img src="../assets/partner/teacher1.png"></div>
                         <div><img src="../assets/partner/teacher2.png"></div>
                     </div>
@@ -209,19 +228,26 @@ export default {
         position: absolute;
         left: -20%;
         top: -110px;
-        z-index: 0;
+        z-index: 1;
     }
     .teacher_avatar{
         display: flex;
+        width: 100%;
         flex-wrap: wrap;
     }
     .teacher_avatar div{
         width: 33.3%;
-        max-height: 400px;
+        /*max-height: 400px;*/
         overflow: hidden;
     }
     .teacher_avatar img{
         width: 100%;
         height: 100%;
+    }
+    .avatar_top{
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 2;
     }
 </style>
