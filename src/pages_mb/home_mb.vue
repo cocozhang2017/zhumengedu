@@ -13,15 +13,12 @@
                         ../assets/mobile/home/home7-assets/home7@2x.png 375w,
                         ../assets/mobile/home/home7-assets/home7@3x.png 414w"
                     >
-                </p>
-
-                <br/>
-                <img  src="../assets/mobile/home/home8.jpg"
-                     srcset="../assets/mobile/home/home8-assets/home8@1x.png 320w,
+                    <img  src="../assets/mobile/home/home8.jpg"
+                          srcset="../assets/mobile/home/home8-assets/home8@1x.png 320w,
                         ../assets/mobile/home/home8-assets/home8@2x.png 375w,
                         ../assets/mobile/home/home8-assets/home8@3x.png 414w"
-                >
-             `
+                    >
+                </p>
             </div>
         </div>
         <!--筑梦教育-->
