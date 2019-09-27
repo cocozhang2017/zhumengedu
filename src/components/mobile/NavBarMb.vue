@@ -20,6 +20,9 @@
                 <span class="guide_item" :class="{on: '/contact_mb'===$route.path}" @click="goTo('/contact_mb')">
                     联系我们
                 </span>
+                <span class="guide_item" :class="{on: '/LeavingMessage_mb'===$route.path}" @click="goTo('/LeavingMessage_mb')">
+                    留言板
+                </span>
             </div>
         </div>
     </div>
@@ -70,7 +73,7 @@
         padding-right: 1%;
     }
     .top{
-        width: 30%;
+        width: 28.5%;
     }
     .t_left > span {
         font-size: .8rem;
@@ -81,7 +84,7 @@
         margin: 0;
     }
     .top_right{
-        width: 60%;
+        width: 71.5%;
     }
     .top_right > span {
         display: inline-block;

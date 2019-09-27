@@ -141,7 +141,7 @@
         width: 90%;
         margin: 20px auto;
         margin-top: -40px;
-        background: #F5FFFA;
+        background: #fff;
     }
 
     .contact-us, .contact-address {

@@ -42,7 +42,7 @@ export default {
 <style>
     @import "../static/css/mobile.css";
 #app {
-    background-color: #F5FFFA;
+    background-color: #fff;
      }
     html,body{
         padding: 0;
