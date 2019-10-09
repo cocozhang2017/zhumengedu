@@ -131,16 +131,28 @@
             </p>
             <div class="mCE_content">
                 <div class="mCE_content_left">
-                    <img src="../assets/mobile/home/home4.jpg"
-                         srcset="../assets/mobile/home/home4-assets/home4@1x.png 320w,
-                        ../assets/mobile/home/home4-assets/home4@2x.png 375w,
-                        ../assets/mobile/home/home4-assets/home4@3x.png 414w"
+                    <img src="../assets/mobile/home/home70.jpg"
+                         srcset="../assets/mobile/home/home70-assets/home70@1x.png 320w,
+                        ../assets/mobile/home/home70-assets/home70@2x.png 375w,
+                        ../assets/mobile/home/home70-assets/home70@3x.png 414w"
+                    >
+                    <img src="../assets/mobile/home/home6.jpg"
+                         srcset="../assets/mobile/home/home6-assets/home6@1x.png 320w,
+                        ../assets/mobile/home/home6-assets/home6@2x.png 375w,
+                        ../assets/mobile/home/home6-assets/home6@3x.png 414w"
                     >
                     <img src="../assets/mobile/home/home5.jpg"
                          srcset="../assets/mobile/home/home5-assets/home5@1x.png 320w,
                         ../assets/mobile/home/home5-assets/home5@2x.png 375w,
                         ../assets/mobile/home/home5-assets/home5@3x.png 414w"
                     >
+                    <img src="../assets/mobile/home/home4.jpg"
+                         srcset="../assets/mobile/home/home4-assets/home4@1x.png 320w,
+                        ../assets/mobile/home/home4-assets/home4@2x.png 375w,
+                        ../assets/mobile/home/home4-assets/home4@3x.png 414w"
+                    >
+
+
                 </div>
             </div>
         </div>
@@ -455,9 +467,9 @@
         font-size: 0;
     }
 
-    .mCE_content_left > img.left {
-        width: 100%;
-        height: 800px;
+    .mCE_content_left > img {
+        width: 50%;
+        /*height: 800px;*/
     }
 
     /*备考学校*/

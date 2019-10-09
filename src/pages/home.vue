@@ -103,8 +103,12 @@
             </p>
             <div class="CE_content">
                 <div class="CE_content_left">
-                    <img class="left" src="../assets/img/school_02.jpg" alt="">
-                    <img class="left" src="../assets/img/school_03.jpg" alt="">
+                    <!--<img class="left" src="../assets/img/school_02.jpg" alt="">-->
+                    <!--<img class="left" src="../assets/img/school_03.jpg" alt="">-->
+                    <img class="left" src="../assets/img/school4.jpg" alt="">
+                    <img class="left" src="../assets/img/school3.jpg" alt="">
+                    <img class="left" src="../assets/img/school1.jpg" alt="">
+                    <img class="left" src="../assets/img/school2.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -393,8 +397,8 @@
     }
 
     .CE_content_left > img.left {
-        width: 100%;
-        /*height: 800px;*/
+        width: 50%;
+        height: 100%;
     }
 
     /*备考学校*/
