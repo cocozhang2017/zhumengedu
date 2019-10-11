@@ -19,8 +19,8 @@
             <span class="firstName">{{item.author.charAt(0)}}</span>
             <span class="authorMsg">{{item.author}}</span>
             <span class="authorMsg">·</span>
-            <span class="authorMsg">{{item.comment}}评论</span>
-            <span class="authorMsg">·</span>
+            <!--<span class="authorMsg">{{item.comment}}评论</span>-->
+            <!--<span class="authorMsg">·</span>-->
             <span class="authorMsg">2天前</span>
           </div>
         </div>
