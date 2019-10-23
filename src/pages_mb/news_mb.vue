@@ -73,7 +73,7 @@
                     time: '20190905'
                 },
                 {
-                    img: '/static/news_mb/news7.jpg',
+                    img: 'http://39.106.107.65/api/images/5310aa637a504d749e4e3e8106f4b15b.jpg',
                     newsTitle: '91所艺术院校分类表，2019艺考生必知，录取 院校更容易！',
                     author: '宿莽',
                     comment: '1928',
@@ -81,6 +81,13 @@
                 },
             ],
         }),
+        created(){
+            this.$axios.get('http://39.106.107.65/api/zhumeng/dynamic/list').then(res=>{
+                console.log(res)
+            }).catch(err=>{
+                console.log(err)
+            })
+        },
         methods: {},
     }
 </script>
