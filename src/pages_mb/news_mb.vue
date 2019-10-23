@@ -14,17 +14,15 @@
         <div class="content">
             <div class="lists" v-for="(item,idx) of newsData">
                 <div class="list_left">
-                    <img :src="item.img">
+                    <img :src="item.pic_Path">
                 </div>
                 <div class="list_right">
-                    <p>{{item.newsTitle}}</p>
+                    <p>{{item.title}}</p>
                     <div class="authorBox">
-                        <span class="firstName">{{item.author.charAt(0)}}</span>
-                        <span class="authorMsg">{{item.author}}</span>
+                        <span class="firstName">{{item.content.charAt(0)}}</span>
+                        <span class="authorMsg">{{item.content}}</span>
                         <span class="authorMsg">·</span>
-                        <!--<span class="authorMsg">{{item.comment}}评论</span>-->
-                        <!--<span class="authorMsg">·</span>-->
-                        <span class="authorMsg">2天前</span>
+                        <span class="authorMsg">{{item.create_Time.split(' ')[0]}}</span>
                     </div>
                 </div>
             </div>
@@ -38,52 +36,48 @@
         data: () => ({
             newsData: [
                 {
-                    img: '/static/news_mb/news2.jpg',
-                    newsTitle: '综合分录取将成为艺术院校录取主流',
-                    author: '宿莽',
-                    comment: '1',
-                    time: '20190910'
+                    pic_Path: '/static/news_mb/news2.jpg',
+                    title: '综合分录取将成为艺术院校录取主流',
+                    content: '宿莽',
+                    create_Time: '2019-10-22 17:19:25'
                 },
                 {
-                    img: '/static/news_mb/news3.jpg',
-                    newsTitle: '英国艺术院校到底牛在哪里？这么多艺术大神 都是毕业于英国.....',
-                    author: '宿莽',
-                    comment: '0',
-                    time: '20190910'
+                    pic_Path: '/static/news_mb/news3.jpg',
+                    title: '英国艺术院校到底牛在哪里？这么多艺术大神 都是毕业于英国.....',
+                    content: '宿莽',
+                    create_Time: '2019-10-22 17:19:25'
                 },
                 {
-                    img: '/static/news_mb/news4.jpg',
-                    newsTitle: '2019中国艺术类院校排名，最受关注的院校和 专业是啥？',
-                    author: '宿莽',
-                    comment: '12',
-                    time: '20190910'
+                    pic_Path: '/static/news_mb/news4.jpg',
+                    title: '2019中国艺术类院校排名，最受关注的院校和 专业是啥？',
+                    content: '宿莽',
+                    create_Time: '2019-10-22 17:19:25'
                 },
                 {
-                    img: '/static/news_mb/news5.png',
-                    newsTitle: '创意艺术大学丨全英最顶尖的艺术院校',
-                    author: '宿莽',
-                    comment: '4',
-                    time: '20190908'
+                    pic_Path: '/static/news_mb/news5.png',
+                    title: '创意艺术大学丨全英最顶尖的艺术院校',
+                    content: '宿莽',
+                    create_Time: '2019-10-22 17:19:25'
                 },
                 {
-                    img: '/static/news_mb/news6.jpg',
-                    newsTitle: '文化成绩要求较低的5所艺术院校（附录取线）',
-                    author: '宿莽',
-                    comment: '3100',
-                    time: '20190905'
+                    pic_Path: '/static/news_mb/news6.jpg',
+                    title: '文化成绩要求较低的5所艺术院校（附录取线）',
+                    content: '宿莽',
+                    create_Time: '2019-10-22 17:19:25'
                 },
                 {
-                    img: 'http://39.106.107.65/api/images/5310aa637a504d749e4e3e8106f4b15b.jpg',
-                    newsTitle: '91所艺术院校分类表，2019艺考生必知，录取 院校更容易！',
-                    author: '宿莽',
-                    comment: '1928',
-                    time: '20190904'
+                    pic_Path: 'http://39.106.107.65/api/images/5310aa637a504d749e4e3e8106f4b15b.jpg',
+                    title: '91所艺术院校分类表，2019艺考生必知，录取 院校更容易！',
+                    content: '宿莽',
+                    create_Time: '2019-10-22 17:19:25'
                 },
             ],
         }),
         created(){
-            this.$axios.get('http://39.106.107.65/api/zhumeng/dynamic/list').then(res=>{
+            let that = this
+            this.$axios.get('/api/api/zhumeng/dynamic/list').then(res=>{
                 console.log(res)
+                that.newsData = res.data
             }).catch(err=>{
                 console.log(err)
             })
