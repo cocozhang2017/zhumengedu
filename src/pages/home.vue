@@ -28,7 +28,7 @@
         <div class="vd">
             <h3>视频介绍</h3>
             <video controls>
-                <source src="" type="video/mp4">
+                <source :src="path" type="video/mp4">
             </video>
         </div>
         <!--课程介绍-->
@@ -259,9 +259,19 @@
     export default {
         name: 'home',
         data () {
-            return {}
-        }
-
+            return {
+                path: '',
+            }
+        },
+        created(){
+            let that = this
+            this.$axios.get('/api/api/zhumeng/video/path').then(res=>{
+                console.log(res)
+                that.path = res.data.video_Path
+            }).catch(err=>{
+                console.log(err)
+            })
+        },
     }
 </script>
 
