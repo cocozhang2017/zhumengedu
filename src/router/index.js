@@ -11,6 +11,8 @@ import news_mb from '@/pages_mb/news_mb'
 import partner_mb from '@/pages_mb/partner_mb'
 import contact_mb from '@/pages_mb/contact_mb'
 import LeavingMessage_mb from '@/pages_mb/LeavingMessage_mb'
+import details_mb from '@/pages_mb/details_mb'
+
 Vue.use(Router)
 let router = new Router({
     mode: 'hash',
@@ -67,10 +69,15 @@ let router = new Router({
             component: LeavingMessage_mb
         },
         {
-            path: '/details/:id',
+            path: '/details',
             name: 'details',
             component: details
-        }
+        },
+        {
+            path: '/details_mb',
+            name: 'details_mb',
+            component: details_mb
+        },
     ]
 })
 

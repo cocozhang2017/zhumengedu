@@ -4,7 +4,7 @@
             <img :src="newsData.pic_Path">
         </div>
         <div class="content">
-            <h2 class="content_title">{{newsData.title}}</h2>
+            <h4 class="content_title">{{newsData.title}}</h4>
             <p class="content_text">{{newsData.content}}</p>
         </div>
     </div>
@@ -41,7 +41,7 @@
     .content{
         width: 62%;
         margin: 0 auto;
-        padding-top: 30px;
+        padding-top: 0px;
         padding-bottom: 50px;
     }
     .content_title{

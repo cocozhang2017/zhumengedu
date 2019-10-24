@@ -16,9 +16,9 @@
                 <div class="list_right">
                     <p>{{item.title}}</p>
                     <div class="authorBox">
-                        <span class="firstName">{{item.content.charAt(0)}}</span>
-                        <span class="authorMsg">{{item.content}}</span>
-                        <span class="authorMsg">·</span>
+                        <!--<span class="firstName">{{item.content.charAt(0)}}</span>-->
+                        <!--<span class="authorMsg">{{item.content}}</span>-->
+                        <!--<span class="authorMsg">·</span>-->
                         <span class="authorMsg">{{item.create_Time.split(' ')[0]}}</span>
                     </div>
                 </div>
@@ -46,10 +46,9 @@
         methods: {
             details(item){
                 var id=item.id;
-                console.log(id);
-               this.$router.push({
-                   path: '/details', query: { id: id }
-               })
+                this.$router.push({
+                    path: '/details', query: { id: id }
+                })
             }
         },
     }
