@@ -264,10 +264,10 @@
             }
         },
         created(){
-            let that = this
-            this.$axios.get('/api/zhumeng/video/path').then(res=>{
-                console.log(res)
-                that.path = res.data.video_Path
+            // let that = this
+            this.$axios.get('/api/api/zhumeng/video/path').then(res=>{
+                console.log(res.data.video_Path)
+                this.path = res.data.video_Path;
             }).catch(err=>{
                 console.log(err)
             })
