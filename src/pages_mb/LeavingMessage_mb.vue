@@ -44,7 +44,7 @@
                 if(this.message!==''&&this.rightPhone){
                     let userphone=this.phone;
                     let content=this.message;
-                    this.$axios.get(`/api/api/zhumeng/message?userphone=${userphone}&content=${content}`).then(res=>{
+                    this.$axios.get(`/api/zhumeng/message?userphone=${userphone}&content=${content}`).then(res=>{
                         console.log(res);
                     }).catch(err=>{
                         console.log(err)

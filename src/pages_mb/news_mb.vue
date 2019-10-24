@@ -38,7 +38,7 @@
         }),
         created(){
             let that = this
-            this.$axios.get('/api/api/zhumeng/dynamic/list').then(res=>{
+            this.$axios.get('/api/zhumeng/dynamic/list').then(res=>{
                 console.log(res)
                 that.newsData = res.data
             }).catch(err=>{

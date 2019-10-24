@@ -19,7 +19,7 @@
       created() {
           let that = this;
           let newsId = this.$route.query.id;
-          this.$axios.get(`/api/api/zhumeng/dynamic/getcontent/${newsId}`).then(res=>{
+          this.$axios.get(`/api/zhumeng/dynamic/getcontent/${newsId}`).then(res=>{
               that.newsData = res.data
           }).catch(err=>{
               console.log(err)
