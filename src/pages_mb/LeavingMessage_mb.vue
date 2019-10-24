@@ -1,13 +1,12 @@
 <template>
-    <div class="mLM">
-        <div class="mmessage">
-            <v-input v-model="username"></v-input>
+    <div class="LM">
+        <div class="message">
+            <v-input v-model="phone"></v-input>
             <v-textarea v-model="message" ref="message"></v-textarea>
             <div class="btn-con">
-                <input @click="handleSend" type="button" class="btn" value="发布"/>
+                <input @click="handleSend" type="button" class="btn" value="发布"  :class="{right_phone:rightPhone}">
             </div>
         </div>
-        <v-list :list="list" @reply="handleReply"></v-list>
     </div>
 </template>
 <script>
@@ -17,9 +16,14 @@
     export default {
         data () {
             return {
-                username: '',
+                phone: '',
                 message: '',
                 list: []
+            }
+        },
+        computed: {
+            rightPhone() {
+                return /^1[3|4|5|7|8][0-9]{9}$/.test(this.phone);
             }
         },
         components: {
@@ -29,55 +33,53 @@
         },
         methods: {
             handleSend: function () {
-                if (this.username === '') {
-                    window.alert('请输入昵称')
+                if (!this.rightPhone) {
+                    window.alert('请输入11位手机号码并且符合国内手机号码段')
                     return
                 }
                 if (this.message === '') {
                     window.alert('请输入留言内容')
                     return
                 }
-                // 数组list存储了所有的留言内容，通过函数给list添加一项留言数据，添加成功后把文本框置空
-                this.list.push({
-                    name: this.username,
-                    message: this.message
-                })
-                this.message = ''
-            },
-            handleReply: function (index) {
-                var name = this.list[index].name
-                this.message = '回复@' + name + ':'
-                this.$refs.message.focus()
+                if(this.message!==''&&this.rightPhone){
+                    let userphone=this.phone;
+                    let content=this.message;
+                    this.$axios.get(`/api/api/zhumeng/message?userphone=${userphone}&content=${content}`).then(res=>{
+                        console.log(res);
+                    }).catch(err=>{
+                        console.log(err)
+                    })
+                }
             }
         }
     }
 </script>
 
 <style scoped>
-    .mLM {
+    .LM {
         background: #F5FFFA;
-        padding-top:80px;
+        padding-top:180px;
         height: 100%;
     }
-    .mmessage {
+    .message {
         display: flex;
         flex-direction: column;
         text-align: center;
     }
-    .mmessage div{
+    .message div{
         margin-bottom: 12px;
         flex-direction: row;
     }
-    .mmessage input:focus,
-    .mmessage textarea:focus{
+    .message input:focus,
+    .message textarea:focus{
         border: 1px solid #3399ff;
         border-radius: 5px;
     }
-    .mmessage .btn-con{
+    .message .btn-con{
         text-align: center;
         display: inline-block;
     }
-    .mmessage .btn{
+    .message .btn{
         padding: 6px 15px;
         border: 1px solid #39f;
         border-radius: 4px;
