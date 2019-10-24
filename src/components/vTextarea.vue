@@ -26,10 +26,6 @@
         // 监听input值
         updateValue: function (event) {
             this.$emit('input', event.target.value)
-        },
-        focus: function () {
-            // 一个对象，持有注册过ref特性的所有DOM元素和组件实例。
-            this.$refs.message.focus()
         }
     }
     }
