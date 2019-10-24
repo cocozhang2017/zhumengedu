@@ -42,11 +42,9 @@
                     return
                 }
                 if(this.message!==''&&this.rightPhone){
-                    let phone=this.phone;
-                    let message=this.message;
-                    console.log(phone);
-                    console.log(message);
-                    this.$axios.get('/api/api/zhumeng/message?userphone=phone&content=message').then(res=>{
+                    let userphone=this.phone;
+                    let content=this.message;
+                    this.$axios.get(`/api/api/zhumeng/message?userphone=${userphone}&content=${content}`).then(res=>{
                         console.log(res);
                     }).catch(err=>{
                         console.log(err)
@@ -60,7 +58,7 @@
 <style scoped>
     .LM {
         background: #F5FFFA;
-        padding-top:80px;
+        padding-top:180px;
         height: 100%;
     }
     .message {
