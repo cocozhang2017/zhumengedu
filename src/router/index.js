@@ -4,6 +4,7 @@ import Home from '@/pages/home'
 import News from '@/pages/news'
 import partner from '@/pages/partner'
 import Contact from '@/pages/contact'
+import details from '@/pages/details'
 import LeavingMessage from '@/pages/LeavingMessage'
 import home_mb from '@/pages_mb/home_mb'
 import news_mb from '@/pages_mb/news_mb'
@@ -64,6 +65,11 @@ let router = new Router({
             path: '/LeavingMessage_mb',
             name: 'LeavingMessage_mb',
             component: LeavingMessage_mb
+        },
+        {
+            path: '/details/:id',
+            name: 'details',
+            component: details
         }
     ]
 })
