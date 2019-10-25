@@ -50,7 +50,7 @@
         <!--视频展示-->
         <div class="mvd">
             <h3>视频介绍</h3>
-            <embed :src="path"  autostart=true type="video/mp4" allowfullscreen="flase" width="100%" height="85%">
+            <embed :src="path"  type="video/mp4" allowfullscreen="flase" width="100%" height="85%">
             </embed>
         </div>
         <!--课程介绍-->

@@ -5,6 +5,7 @@
             <v-textarea v-model="message" ref="message"></v-textarea>
             <div class="btn-con">
                 <input @click="handleSend" type="button" class="btn" value="发布"  :class="{right_phone:rightPhone}">
+                <input @click="refresh" type="button" class="btn" value="刷新" >
             </div>
         </div>
     </div>
@@ -54,6 +55,10 @@
                         console.log(err)
                     })
                 }
+            },
+            refresh(){
+                this.phone='';
+                this.message='';
             }
         }
     }
