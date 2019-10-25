@@ -45,11 +45,11 @@
                 if(this.message!==''&&this.rightPhone){
                     let userphone=this.phone;
                     let content=this.message;
-                    this.$axios.get(`/api/api/zhumeng/message?userphone=${userphone}&content=${content}`).then(res=>{
+                    this.$axios.get(`/api/zhumeng/message?userphone=${userphone}&content=${content}`).then(res=>{
                         console.log(res.status);
                         if(res.status==200){
-                            this.phone='';
-                            this.message='';
+                            alert('发布成功')
+                            this.refresh();
                         }
                     }).catch(err=>{
                         console.log(err)

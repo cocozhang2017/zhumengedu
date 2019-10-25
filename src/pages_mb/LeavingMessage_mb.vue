@@ -45,11 +45,18 @@
                     let userphone=this.phone;
                     let content=this.message;
                     this.$axios.get(`/api/zhumeng/message?userphone=${userphone}&content=${content}`).then(res=>{
-                        console.log(res);
+                        if(res.status==200){
+                            alert('发布成功')
+                            this.refresh();
+                        }
                     }).catch(err=>{
                         console.log(err)
                     })
                 }
+            },
+            refresh(){
+                this.phone='';
+                this.message='';
             }
         }
     }

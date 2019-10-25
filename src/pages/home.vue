@@ -264,7 +264,7 @@
         },
         created(){
             // let that = this
-            this.$axios.get('/api/api/zhumeng/video/path').then(res=>{
+            this.$axios.get('/api/zhumeng/video/path').then(res=>{
                 console.log(res.data.video_Path)
                 this.path = res.data.video_Path;
             }).catch(err=>{
